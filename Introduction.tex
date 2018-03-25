@@ -1,0 +1,65 @@
+Evolutionary Algorithms (EA) have become a promising alternative in several practical problems where is not suitable a deterministic approach.
+%
+Multi-objective Optimization Problems (MOP) involves the simultaneous optimization of two or more objective functions that are usually in conflict.
+%
+A continuous minimization multi-objective problem can be defined as follows:
+%
+\begin{equation}\label{Base}
+\begin{split}
+&minimize \quad F(x) = (f_1(x), f_2(x), ..., f_m(x)) \\
+&subject \quad to \quad x \in \Omega
+\end{split}
+\end{equation}
+where $x = (x_1, ..., x_n) \in R^n$ indicate a decision variable vector, $n$ correspond to the number of decision variables, $\Omega$ is the feasible space, $F: \Omega \rightarrow R^m$ which consist of $m$ objective functions and $R^m$ is known as the \textit{objective space}.
+%
+
+Particularly, a MOP which consists in minimization of the $m$ objective functions and given two decision variable vectors $x, y \in \Omega$, $x$ dominates $y$ denoted by $x \prec y$, iff $f_i(x)  \leq f_i(y)$ for all objectives $\{1,...,m\}$, and $f_i(x)$ is better than $f_i(y)$ in at least one objective function $F(x) \neq F(y)$.
+%
+Accordingly this, the solution $x$ is not worse than $y$ in any of the objectives and $x$ is strictly better than $y$ in at least one objective.
+%
+The Pareto dominance is defined as the set of the best solutions that are not dominated by any feasible solution.
+%
+A decision variable vector $x^* \in \Omega$ is known as the Pareto optimal solution if does not exist any solution $x \in \Omega$ that dominates $x^*$.
+%
+The Pareto set correspond to the set of all Pareto optimal decision vectors and the Pareto front are the images of the Pareto set.
+%
+Principally, the goal in multi-objective optimization is to obtain an approximation of the Pareto front.
+%
+Therefore is required to obtain diverse and converged solutions among the Pareto front.
+%
+
+In the last decade several paradigms of MOEAs have been arised REF, among them, the Non-Dominated Sorting Genetic Algortihm II (NSGA-II) ref, the MOEA based on decomposition (MOEA/D) ref, the $S$-metric Selection Evolutionary Multi-objective Optimization Algorithm (SMS-EMOA) ref are three representative methods that can be considered as state of the art.
+
+%
+Differential Evolution (DE) is popular algorithm which outperform the Genetic Algorithms (GAs) ref.
+%
+However, it is well known that DE suffers of diversity issues and can present important drawbacks in long-term executions.
+%
+Based on the acelerated convergence it can locate individuals in a sub-optimal region at the first stages of the execution and the rest of the function evaluations could be wasted.
+%
+To deal with this issues, it is evident a bias of design in the recent algorithms, most of them are designed with strategies that considers the criteria stop as part of the search process, such as adaptive parametes ref, population reduction ref and differents mutation strategies ref.
+%
+A substantial weakness in DE is the high paramete dependence, also there exist a different behabior between single-objective and multi-objective problems which are related with the decision variable space diversity(referencia GDE3).
+
+%
+On the other hand GAs imply a less agressive behavior, this can be a reason  of the preference of DE than GA in short-term executions both in continuous and discrete domains ref, ref.
+%
+However, considering a long-term executions GAs has better properties, likely for the flexibility of the operators involved, as the selection, crossover and  mutation.
+%
+
+In this paper the principal issue addresed is to provide a crossover operator which considers the criteria stop as part of the search process, guiding to a gradual change between exploration and intensification.
+%
+The Simulated Binary Crossover (SBX) is analyzed and modified to offer a suiteable perfomance in long-term executions.
+%
+Specifically, in this paper a variant of the SBX is proposed with the aim of better exploring different regions of the search space.
+%
+
+The rest of this paper is organized as follows.
+%
+In Section II provides a detailled review of the literature related with the SBX operator, also a brief review of the state of the art of MOEAs is showed.
+%
+Section III describe the key components of the SBX, therefore is showed a proposal.
+%
+The experimental validation of the proposal is shown in Section IV.
+%
+Finally, conslusions and some lines of future work are given in Section V.

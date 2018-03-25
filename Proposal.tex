@@ -1,0 +1,18 @@
+Based in the previous analysis, to achieve the effect of balance between exploration at first stages and intensification at the end of the executions the following modifications are proposed.
+%
+First, the probability of modify a variable ($P_v$) change among the execution, thus at first generations almost all variables are modified or sampled by the distribution and in the last stages less variables are sampled.
+%
+This change is based in a linear decrement model, where initially is 100\% and at the end it is 50\%.
+%
+
+In a similar way the second change is related with the ''variable uniform crossover probability`` which is incremented to the 50\%.
+\begin{equation}
+\delta = max \left (0.5, 1.0 - \frac{T_{Elapsed}}{T_{End}} \right )
+\end{equation}
+
+%
+Finally, the index distribution change among the execution, where at the first stages it is low inducing a high degree of exploration and is incremented to the last stages as indicate the equation (\ref{eq:index_eta}).
+\begin{equation}\label{eq:index_eta}
+ \eta_c = 2 + 20 \times \left ( \frac{T_{Elapsed}}{T_{End}} \right)
+\end{equation}
+
