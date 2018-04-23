@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  30 JAN 2018 16:45
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  22 APR 2018 22:00
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -6,92 +6,116 @@ entering extended mode
 (./main.tex
 LaTeX2e <2011/06/27>
 Babel <3.9h> and hyphenation patterns for 78 languages loaded.
-(/usr/share/texlive/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
-Document Class: IEEEtran 2012/12/27 V1.8 by Michael Shell
+(./IEEEtran.cls
+Document Class: IEEEtran 2015/08/26 V1.8b by Michael Shell
 -- See the "IEEEtran_HOWTO" manual for usage information.
 -- http://www.michaelshell.org/tex/ieeetran/
 \@IEEEtrantmpdimenA=\dimen102
 \@IEEEtrantmpdimenB=\dimen103
+\@IEEEtrantmpdimenC=\dimen104
 \@IEEEtrantmpcountA=\count79
 \@IEEEtrantmpcountB=\count80
+\@IEEEtrantmpcountC=\count81
 \@IEEEtrantmptoksA=\toks14
-LaTeX Font Info:    Try loading font information for OT1+ptm on input line 368.
+LaTeX Font Info:    Try loading font information for OT1+ptm on input line 503.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd
 File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 )
 -- Using 8.5in x 11in (letter) paper.
 -- Using PDF output.
-\@IEEEnormalsizeunitybaselineskip=\dimen104
+\@IEEEnormalsizeunitybaselineskip=\dimen105
 -- This is a 10 point document.
-\CLASSINFOnormalsizebaselineskip=\dimen105
-\CLASSINFOnormalsizeunitybaselineskip=\dimen106
-\IEEEnormaljot=\dimen107
+\CLASSINFOnormalsizebaselineskip=\dimen106
+\CLASSINFOnormalsizeunitybaselineskip=\dimen107
+\IEEEnormaljot=\dimen108
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <5> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <7> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <8> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <9> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <11> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <12> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <17> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <20> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 726.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 1090.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
-(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 726.
-\IEEEilabelindentA=\dimen108
-\IEEEilabelindentB=\dimen109
-\IEEEilabelindent=\dimen110
-\IEEEelabelindent=\dimen111
-\IEEEdlabelindent=\dimen112
-\IEEElabelindent=\dimen113
-\IEEEiednormlabelsep=\dimen114
-\IEEEiedmathlabelsep=\dimen115
+(Font)              Font shape `OT1/ptm/b/it' tried instead on input line 1090.
+
+\IEEEquantizedlength=\dimen109
+\IEEEquantizedlengthdiff=\dimen110
+\IEEEquantizedtextheightdiff=\dimen111
+\IEEEilabelindentA=\dimen112
+\IEEEilabelindentB=\dimen113
+\IEEEilabelindent=\dimen114
+\IEEEelabelindent=\dimen115
+\IEEEdlabelindent=\dimen116
+\IEEElabelindent=\dimen117
+\IEEEiednormlabelsep=\dimen118
+\IEEEiedmathlabelsep=\dimen119
 \IEEEiedtopsep=\skip41
-\c@section=\count81
-\c@subsection=\count82
-\c@subsubsection=\count83
-\c@paragraph=\count84
-\c@IEEEsubequation=\count85
+\c@section=\count82
+\c@subsection=\count83
+\c@subsubsection=\count84
+\c@paragraph=\count85
+\c@IEEEsubequation=\count86
 \abovecaptionskip=\skip42
 \belowcaptionskip=\skip43
-\c@figure=\count86
-\c@table=\count87
-\@IEEEeqnnumcols=\count88
-\@IEEEeqncolcnt=\count89
-\@IEEEsubeqnnumrollback=\count90
-\@IEEEtmpitemindent=\dimen116
-\c@IEEEbiography=\count91
-\@IEEEtranrubishbin=\box26
-) (/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
+\c@figure=\count87
+\c@table=\count88
+\@IEEEeqnnumcols=\count89
+\@IEEEeqncolcnt=\count90
+\@IEEEsubeqnnumrollback=\count91
+\@IEEEquantizeheightA=\dimen120
+\@IEEEquantizeheightB=\dimen121
+\@IEEEquantizeheightC=\dimen122
+\@IEEEquantizeprevdepth=\dimen123
+\@IEEEquantizemultiple=\count92
+\@IEEEquantizeboxA=\box26
+\@IEEEtmpitemindent=\dimen124
+\IEEEPARstartletwidth=\dimen125
+\c@IEEEbiography=\count93
+\@IEEEtranrubishbin=\box27
+)
+** ATTENTION: Overriding command lockouts (line 11).
+(/usr/share/texlive/texmf-dist/tex/latex/cite/cite.sty
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
@@ -110,7 +134,7 @@ Package: ucs 2013/05/11 v2.2 UCS: Unicode input support
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-global.def
 File: uni-global.def 2013/05/13 UCS: Unicode global data
 )
-\uc@secondtry=\count92
+\uc@secondtry=\count94
 \uc@combtoks=\toks17
 \uc@combtoksb=\toks18
 \uc@temptokena=\toks19
@@ -126,46 +150,46 @@ Package: amstext 2000/06/29 v2.01
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
 File: amsgen.sty 1999/11/30 v2.0
 \@emptytoks=\toks20
-\ex@=\dimen117
+\ex@=\dimen126
 ))
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
 Package: amsbsy 1999/11/29 v1.2d
-\pmbraise@=\dimen118
+\pmbraise@=\dimen127
 )
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count93
+\inf@bad=\count95
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count94
-\leftroot@=\count95
+\uproot@=\count96
+\leftroot@=\count97
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count96
-\DOTSCASE@=\count97
+\classnum@=\count98
+\DOTSCASE@=\count99
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
-\Mathstrutbox@=\box27
-\strutbox@=\box28
-\big@size=\dimen119
+\Mathstrutbox@=\box28
+\strutbox@=\box29
+\big@size=\dimen128
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count98
-\c@MaxMatrixCols=\count99
+\macc@depth=\count100
+\c@MaxMatrixCols=\count101
 \dotsspace@=\muskip10
-\c@parentequation=\count100
-\dspbrk@lvl=\count101
+\c@parentequation=\count102
+\dspbrk@lvl=\count103
 \tag@help=\toks21
-\row@=\count102
-\column@=\count103
-\maxfields@=\count104
+\row@=\count104
+\column@=\count105
+\maxfields@=\count106
 \andhelp@=\toks22
-\eqnshift@=\dimen120
-\alignsep@=\dimen121
-\tagshift@=\dimen122
-\tagwidth@=\dimen123
-\totwidth@=\dimen124
-\lineht@=\dimen125
+\eqnshift@=\dimen129
+\alignsep@=\dimen130
+\tagshift@=\dimen131
+\tagwidth@=\dimen132
+\totwidth@=\dimen133
+\lineht@=\dimen134
 \@envbody=\toks23
 \multlinegap=\skip45
 \multlinetaggap=\skip46
@@ -189,17 +213,17 @@ nment
 
 (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
 Package: float 2001/11/08 v1.3d Float enhancements (AL)
-\c@float@type=\count105
+\c@float@type=\count107
 \float@exts=\toks25
-\float@box=\box29
+\float@box=\box30
 \@float@everytoks=\toks26
-\@floatcapt=\box30
+\@floatcapt=\box31
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
 Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
 )
 \@float@every@algorithm=\toks27
-\c@algorithm=\count106
+\c@algorithm=\count108
 )
 (/usr/share/texlive/texmf-dist/tex/latex/algorithms/algorithmic.sty
 Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
@@ -208,10 +232,10 @@ Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
 Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
 \KV@toks@=\toks28
 )
-\c@ALC@unique=\count107
-\c@ALC@line=\count108
-\c@ALC@rem=\count109
-\c@ALC@depth=\count110
+\c@ALC@unique=\count109
+\c@ALC@line=\count110
+\c@ALC@rem=\count111
+\c@ALC@depth=\count112
 \ALC@tlm=\skip47
 \algorithmicindent=\skip48
 )
@@ -238,10 +262,10 @@ Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
 (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
 Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 )
-\Gread@gobject=\count111
+\Gread@gobject=\count113
 ))
-\Gin@req@height=\dimen126
-\Gin@req@width=\dimen127
+\Gin@req@height=\dimen135
+\Gin@req@width=\dimen136
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
 Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
@@ -324,44 +348,47 @@ Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
 Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
 Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
+(/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
+\bigstrutjot=\dimen137
+)
 No file main.aux.
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 325.
-LaTeX Font Info:    ... okay on input line 325.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 325.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 325.
-
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
+LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 325.
+LaTeX Font Info:    ... okay on input line 76.
 
+-- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
 File: ucsencs.def 2011/01/21 Fixes to fontencodings LGR, T3
 )
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count112
-\scratchdimen=\dimen128
-\scratchbox=\box31
-\nofMPsegments=\count113
-\nofMParguments=\count114
+\scratchcounter=\count114
+\scratchdimen=\dimen138
+\scratchbox=\box32
+\nofMPsegments=\count115
+\nofMParguments=\count116
 \everyMPshowfont=\toks29
-\MPscratchCnt=\count115
-\MPscratchDim=\dimen129
-\MPnumerator=\count116
-\makeMPintoPDFobject=\count117
+\MPscratchCnt=\count117
+\MPscratchDim=\dimen139
+\MPnumerator=\count118
+\makeMPintoPDFobject=\count119
 \everyMPtoPDFconversion=\toks30
 ) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
 Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
@@ -421,172 +448,455 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+)
+
+LaTeX Warning: Citation `Joel:Kalyanmoy' on page 1 undefined on input line 31.
 
 
-]) (./LiteratureReview.tex [2]
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 3 undefined on input line 146.
+LaTeX Warning: Citation `Joel:Coello' on page 1 undefined on input line 31.
 
 
-
-LaTeX Warning: Reference `eq:child_1' on page 3 undefined on input line 158.
-
-
-LaTeX Warning: Reference `eq:child_2' on page 3 undefined on input line 164.
+LaTeX Warning: Citation `Joel:NSGAII' on page 1 undefined on input line 31.
 
 
-LaTeX Warning: Citation `Joel:SBX1994' on page 3 undefined on input line 171.
+LaTeX Warning: Citation `Joel:MOEAD' on page 1 undefined on input line 31.
 
 
-LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
-99.
+LaTeX Warning: Citation `Joel:SMSEMOA' on page 1 undefined on input line 31.
 
-<img/DensitySBX_English.png, id=19, 1290.8225pt x 920.43875pt>
+
+LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
+ine 34.
+
+
+LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 34.
+
+
+LaTeX Warning: Citation `brest2017single' on page 1 undefined on input line 40.
+
+
+
+LaTeX Warning: Citation `brest2008population' on page 1 undefined on input line
+ 40.
+
+
+LaTeX Warning: Citation `das2011differential' on page 1 undefined on input line
+ 40.
+
+
+LaTeX Warning: Citation `kukkonen2007performance' on page 1 undefined on input 
+line 44.
+
+
+LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
+ine 47.
+
+
+LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 47.
+
+[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
+
+
+]
+
+LaTeX Warning: Reference `LiteratureReview' on page 2 undefined on input line 5
+9.
+
+
+LaTeX Warning: Reference `Proposal' on page 2 undefined on input line 61.
+
+
+LaTeX Warning: Reference `Experimental_Validation' on page 2 undefined on input
+ line 65.
+
+
+LaTeX Warning: Reference `Conclusions' on page 2 undefined on input line 67.
+
+) (./LiteratureReview.tex
+
+LaTeX Warning: Citation `Joel:BOOK_MOEAs' on page 2 undefined on input line 13.
+
+
+
+LaTeX Warning: Citation `pilat2010evolutionary' on page 2 undefined on input li
+ne 15.
+
+
+LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 19.
+
+
+LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 19.
+
+
+LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 19.
+
+
+LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 36.
+
+
+LaTeX Warning: Citation `horoba2008benefits' on page 2 undefined on input line 
+42.
+
+
+LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 47.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 47--55
+ \OT1/ptm/m/it/10 2) De-com-po-si-tion Based MOEAs - MOEA/D: [][]
+ []
+
+
+Underfull \hbox (badness 2418) in paragraph at lines 47--55
+\OT1/ptm/m/n/10 Decomposition-based MOEAs [\OT1/ptm/b/n/10 ?\OT1/ptm/m/n/10 ] t
+rans-form a MOP in
+ []
+
+
+Underfull \hbox (badness 1371) in paragraph at lines 47--55
+\OT1/ptm/m/n/10 a set of single-objective op-ti-miza-tion prob-lems that are
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 47--55
+\OT1/ptm/m/n/10 con-sid-ered si-mul-ta-ne-ously. This trans-for-ma-tion can be
+ []
+
+
+LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 56.
+
+
+LaTeX Warning: Citation `price2006differential' on page 2 undefined on input li
+ne 62.
+
+
+LaTeX Warning: Citation `hamdan2012distribution' on page 2 undefined on input l
+ine 62.
+
+
+LaTeX Warning: Citation `zhang2009performance' on page 2 undefined on input lin
+e 62.
+
+<img/SBX_eta_20_2D.png, id=16, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_2D.png Graphic file (type png)
+ <use img/SBX_eta_20_2D.png>
+Package pdftex.def Info: img/SBX_eta_20_2D.png used on input line 71.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+<img/SBX_eta_20_3D.png, id=17, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_3D.png Graphic file (type png)
+ <use img/SBX_eta_20_3D.png>
+Package pdftex.def Info: img/SBX_eta_20_3D.png used on input line 72.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 70--74
+ [][] 
+ []
+
+
+LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 2 undefined on input 
+line 83.
+
+
+Underfull \hbox (badness 1983) in paragraph at lines 77--87
+ \OT1/ptm/m/it/10 3) In-di-ca-tor Based MOEAs - SMS-EMOA: [][] \OT1/ptm/m/n/10 
+In multi-
+ []
+
+
+LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 88.
+
+<img/DensitySBX_English.png, id=18, 1290.8225pt x 920.43875pt>
 File: img/DensitySBX_English.png Graphic file (type png)
 
 <use img/DensitySBX_English.png>
-Package pdftex.def Info: img/DensitySBX_English.png used on input line 207.
+Package pdftex.def Info: img/DensitySBX_English.png used on input line 103.
 (pdftex.def)             Requested size: 180.67499pt x 128.83246pt.
+ [2 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png>]
+
+LaTeX Warning: Citation `eshelman1993real' on page 3 undefined on input line 12
+3.
 
 
-LaTeX Warning: Reference `eq:sbx_spread' on page 3 undefined on input line 224.
+LaTeX Warning: Citation `Joel:SBX1994' on page 3 undefined on input line 123.
+
+
+LaTeX Warning: Citation `Joel:UNDX' on page 3 undefined on input line 129.
+
+
+LaTeX Warning: Citation `Joel:DE_Storn_SPX' on page 3 undefined on input line 1
+29.
+
+
+LaTeX Warning: Citation `jain2011parent' on page 3 undefined on input line 131.
 
 
 
-LaTeX Warning: Reference `eq:child_1' on page 3 undefined on input line 224.
+LaTeX Warning: Citation `deb1994simulated' on page 3 undefined on input line 14
+5.
 
 
-LaTeX Warning: Reference `eq:sbx_spread' on page 3 undefined on input line 225.
+LaTeX Warning: Citation `Joel:NSGAII' on page 3 undefined on input line 145.
+
+
+LaTeX Warning: Citation `Joel:SMSEMOA' on page 3 undefined on input line 145.
+
+
+LaTeX Warning: Reference `fig:fig_sim' on page 3 undefined on input line 154.
+
+<img/SBX_eta_20_2D_pv_1.png, id=28, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_2D_pv_1.png Graphic file (type png)
+
+<use img/SBX_eta_20_2D_pv_1.png>
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_1.png used on input line 179.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+<img/SBX_eta_20_2D_pv_01.png, id=29, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_2D_pv_01.png Graphic file (type png)
+
+<use img/SBX_eta_20_2D_pv_01.png>
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_01.png used on input line 180.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 178--182
+ [][] 
+ []
+
+
+LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
+82.
+
+
+LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
+82.
+
+[3 <./img/DensitySBX_English.png> <./img/SBX_eta_20_2D_pv_1.png> <./img/SBX_eta
+_20_2D_pv_01.png>]
+
+LaTeX Warning: Citation `deb1999self' on page 4 undefined on input line 211.
+
+
+LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 211.
 
 
 
-LaTeX Warning: Reference `eq:child_2' on page 3 undefined on input line 225.
+LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 226.
 
-) (./Proposal.tex [3]
 
-LaTeX Warning: Reference `eq:index_eta' on page 4 undefined on input line 14.
+LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 232.
+
+
+LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 244.
+
+
+
+LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 244.
+
+
+LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 245.
+
+
+
+LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 245.
+
+
+LaTeX Warning: Citation `Joel:SBX1994' on page 4 undefined on input line 260.
+
+
+LaTeX Warning: Citation `Joel:UNDX' on page 4 undefined on input line 260.
+
+
+LaTeX Warning: Citation `price2006differential' on page 4 undefined on input li
+ne 275.
+
+
+LaTeX Warning: Reference `fig:Simulation_pv' on page 4 undefined on input line 
+275.
+
+
+LaTeX Warning: Citation `ma2016multiobjective' on page 4 undefined on input lin
+e 279.
+
+
+LaTeX Warning: Citation `tuvsar2007differential' on page 4 undefined on input l
+ine 282.
+
+
+LaTeX Warning: Citation `muhlenbein1993predictive' on page 4 undefined on input
+ line 282.
+
+
+LaTeX Warning: Reference `fig:Simulations_Index_20' on page 4 undefined on inpu
+t line 288.
+
+
+LaTeX Warning: Citation `voigt1995fuzzy' on page 4 undefined on input line 291.
+
+
+
+LaTeX Warning: Reference `fig:Simulation_Case_3' on page 4 undefined on input l
+ine 291.
+
+
+LaTeX Warning: Reference `alg:SBX_Operator' on page 4 undefined on input line 2
+95.
+
+
+LaTeX Warning: Citation `Joel:NSGAII' on page 4 undefined on input line 295.
+
+<img/SBX_eta_2.png, id=38, 481.8pt x 361.35pt>
+File: img/SBX_eta_2.png Graphic file (type png)
+ <use img/SBX_eta_2.png>
+Package pdftex.def Info: img/SBX_eta_2.png used on input line 309.
+(pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
+
+<img/SBX_eta_20.png, id=39, 481.8pt x 361.35pt>
+File: img/SBX_eta_20.png Graphic file (type png)
+ <use img/SBX_eta_20.png>
+Package pdftex.def Info: img/SBX_eta_20.png used on input line 310.
+(pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
+
+Overfull \hbox (11.18573pt too wide) in paragraph at lines 308--312
+ [][] 
+ []
+
+) (./Proposal.tex
+
+LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 6.
+
+
+LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 8.
+
+[4 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]
+
+LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 16.
+
+
+LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
+t line 18.
+
+
+LaTeX Warning: Citation `hamdan2012distribution' on page 5 undefined on input l
+ine 20.
+
+
+LaTeX Warning: Reference `Experimental_Validation' on page 5 undefined on input
+ line 31.
+
+
+LaTeX Warning: Citation `Joel:jMetal' on page 5 undefined on input line 33.
+
+
+LaTeX Warning: Reference `alg:SBX_Operator' on page 5 undefined on input line 3
+9.
+
+
+LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 42.
+
+
+LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 43.
+
+
+LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 44.
+
+
+LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
+ine 48.
+
+
+LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 48.
+
+
+LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 48.
+
+
+LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
+t line 48.
+
+
+LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 5 undefined on input 
+line 48.
+
+
+LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
+ine 50.
+
+
+LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 60.
+
+
+LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 60.
+
+[5]
+
+LaTeX Warning: Reference `alg:SBX_Operator' on page 6 undefined on input line 7
+1.
+
+
+LaTeX Warning: Reference `eqn:linear' on page 6 undefined on input line 73.
+
+
+LaTeX Warning: Reference `eqn:index_eta' on page 6 undefined on input line 73.
 
 ) (./ExperimentalValidation.tex
-(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-0.def
-File: uni-0.def 2013/05/13 UCS: Unicode data U+0000..U+00FF
-)
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 32.
+LaTeX Warning: Citation `Joel:WFG' on page 6 undefined on input line 3.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 70.
+LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 3.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 110.
+LaTeX Warning: Citation `zhang2009performance' on page 6 undefined on input lin
+e 3.
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 145.
+LaTeX Warning: Citation `tuvsar2007differential' on page 6 undefined on input l
+ine 5.
 
-Package epstopdf Info: Source file: <img/bar_HV_2obj.eps>
-(epstopdf)                    date: 2018-01-29 17:22:23
-(epstopdf)                    size: 18582 bytes
-(epstopdf)             Output file: <img/bar_HV_2obj-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-01-29 17:25:12
-(epstopdf)                    size: 7414 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/bar_HV_2obj-eps-conver
-ted-to.pdf img/bar_HV_2obj.eps>
-(epstopdf)             \includegraphics on input line 182.
-Package epstopdf Info: Output file is already uptodate.
-<img/bar_HV_2obj-eps-converted-to.pdf, id=26, 505.89pt x 1228.59pt>
-File: img/bar_HV_2obj-eps-converted-to.pdf Graphic file (type pdf)
 
-<use img/bar_HV_2obj-eps-converted-to.pdf>
-Package pdftex.def Info: img/bar_HV_2obj-eps-converted-to.pdf used on input lin
-e 182.
-(pdftex.def)             Requested size: 126.47218pt x 307.14674pt.
+LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 11.
 
-Overfull \hbox (55.14674pt too wide) in paragraph at lines 182--183
- [][] 
+
+LaTeX Warning: Reference `tab:ReferencePoints' on page 6 undefined on input lin
+e 26.
+
+
+LaTeX Warning: Citation `Joel:Kuhn_Munkres' on page 6 undefined on input line 2
+6.
+
+
+LaTeX Warning: Citation `Joel:OperatorAHX' on page 6 undefined on input line 26
+.
+
+
+LaTeX Warning: Citation `Joel:StatisticalTest' on page 6 undefined on input lin
+e 29.
+
+
+LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
+ine 42.
+
+
+LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
+ine 48.
+
+
+LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 61.
+
+
+LaTeX Warning: Reference `tab:Metrics_3' on page 6 undefined on input line 61.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 61--61
+[][][]\OT1/ptm/m/n/8 The de-tailed re-sults can be con-sulted in the web page
  []
 
 
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 186.
+LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 67.
 
-Package epstopdf Info: Source file: <img/bar_IGD_2obj.eps>
-(epstopdf)                    date: 2018-01-29 17:22:23
-(epstopdf)                    size: 18473 bytes
-(epstopdf)             Output file: <img/bar_IGD_2obj-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-01-29 17:25:13
-(epstopdf)                    size: 6618 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/bar_IGD_2obj-eps-conve
-rted-to.pdf img/bar_IGD_2obj.eps>
-(epstopdf)             \includegraphics on input line 188.
-Package epstopdf Info: Output file is already uptodate.
-<img/bar_IGD_2obj-eps-converted-to.pdf, id=27, 505.89pt x 1228.59pt>
-File: img/bar_IGD_2obj-eps-converted-to.pdf Graphic file (type pdf)
+[6])
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
-<use img/bar_IGD_2obj-eps-converted-to.pdf>
-Package pdftex.def Info: img/bar_IGD_2obj-eps-converted-to.pdf used on input li
-ne 188.
-(pdftex.def)             Requested size: 126.47218pt x 307.14674pt.
-
-Overfull \hbox (55.14674pt too wide) in paragraph at lines 188--189
- [][] 
- []
-
-Package epstopdf Info: Source file: <img/bar_HV_3obj.eps>
-(epstopdf)                    date: 2018-01-29 17:22:23
-(epstopdf)                    size: 18584 bytes
-(epstopdf)             Output file: <img/bar_HV_3obj-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-01-29 17:25:13
-(epstopdf)                    size: 7423 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/bar_HV_3obj-eps-conver
-ted-to.pdf img/bar_HV_3obj.eps>
-(epstopdf)             \includegraphics on input line 195.
-Package epstopdf Info: Output file is already uptodate.
-<img/bar_HV_3obj-eps-converted-to.pdf, id=28, 505.89pt x 1228.59pt>
-File: img/bar_HV_3obj-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/bar_HV_3obj-eps-converted-to.pdf>
-Package pdftex.def Info: img/bar_HV_3obj-eps-converted-to.pdf used on input lin
-e 195.
-(pdftex.def)             Requested size: 126.47218pt x 307.14674pt.
-
-Overfull \hbox (55.14674pt too wide) in paragraph at lines 195--196
- [][] 
- []
-
-
-LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 199.
-
-Package epstopdf Info: Source file: <img/bar_IGD_3obj.eps>
-(epstopdf)                    date: 2018-01-29 17:22:24
-(epstopdf)                    size: 18481 bytes
-(epstopdf)             Output file: <img/bar_IGD_3obj-eps-converted-to.pdf>
-(epstopdf)                    date: 2018-01-29 17:25:14
-(epstopdf)                    size: 6606 bytes
-(epstopdf)             Command: <repstopdf --outfile=img/bar_IGD_3obj-eps-conve
-rted-to.pdf img/bar_IGD_3obj.eps>
-(epstopdf)             \includegraphics on input line 201.
-Package epstopdf Info: Output file is already uptodate.
-<img/bar_IGD_3obj-eps-converted-to.pdf, id=29, 505.89pt x 1228.59pt>
-File: img/bar_IGD_3obj-eps-converted-to.pdf Graphic file (type pdf)
-
-<use img/bar_IGD_3obj-eps-converted-to.pdf>
-Package pdftex.def Info: img/bar_IGD_3obj-eps-converted-to.pdf used on input li
-ne 201.
-(pdftex.def)             Requested size: 126.47218pt x 307.14674pt.
-
-Overfull \hbox (55.14674pt too wide) in paragraph at lines 201--202
- [][] 
- []
-
-)
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 4 undefined on input line 430.
-
+ [7]
 No file main.bbl.
 
 ** Conference Paper **
@@ -599,11 +909,9 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4 <./img/DensitySBX_English.png> <./img/bar_HV_2obj-eps-converted-to.pdf> <./i
-mg/bar_IGD_2obj-eps-converted-to.pdf>] [5
+[8
 
- <./img/bar_HV_3obj-eps-converted-to.pdf> <./img/bar_IGD_3obj-eps-converted-to.
-pdf>] [6] [7] (./main.aux)
+] (./main.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -612,30 +920,33 @@ LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
  ) 
 Here is how much of TeX's memory you used:
- 4711 strings out of 493304
- 67946 string characters out of 6139871
- 281491 words of memory out of 5000000
- 8060 multiletter control sequences out of 15000+600000
- 43900 words of font info for 88 fonts, out of 8000000 for 9000
- 960 hyphenation exceptions out of 8191
- 37i,15n,26p,392b,613s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 4417 strings out of 493304
+ 66931 string characters out of 6139871
+ 170870 words of memory out of 5000000
+ 7766 multiletter control sequences out of 15000+600000
+ 46621 words of font info for 91 fonts, out of 8000000 for 9000
+ 957 hyphenation exceptions out of 8191
+ 37i,15n,26p,682b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy1
-0.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
-w/times/utmri8a.pfb>
-Output written on main.pdf (7 pages, 264695 bytes).
+ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
+msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
+/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on main.pdf (8 pages, 328020 bytes).
 PDF statistics:
- 106 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

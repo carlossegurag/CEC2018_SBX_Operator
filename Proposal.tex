@@ -1,18 +1,80 @@
-Based in the previous analysis, to achieve the effect of balance between exploration at first stages and intensification at the end of the executions the following modifications are proposed.
+\subsection{Implementing the linear dynamic behavior}
+Based in the previous analysis, to foment a balance between exploration at first stages and intensification at the end of the execution, the following modifications are proposed.
 %
-First, the probability of modify a variable ($P_v$) change among the execution, thus at first generations almost all variables are modified or sampled by the distribution and in the last stages less variables are sampled.
+First, the probability of modify a variable ($\delta_1$) change among the execution, thus at first generations in average almost all variables are modified or sampled by the distribution of SBX, and in the last stages less variables are modified.
 %
-This change is based in a linear decrement model, where initially is 100\% and at the end it is 50\%.
+This change is based in a linear decreasing model, where initially is fixed to $1.0$ and it is decreasing to the half of total generations to $0.5$ which is maintained until the end of the execution, thus from half of executions there is present the standard SBX, as is showed in the equation (\ref{eqn:linear}), where $T_{Elapsed}$ is the current generation (Elapsed time) and $T_{End}$ is the number of generations (Total time).
 %
-
-In a similar way the second change is related with the ''variable uniform crossover probability`` which is incremented to the 50\%.
-\begin{equation}
-\delta = max \left (0.5, 1.0 - \frac{T_{Elapsed}}{T_{End}} \right )
+In a similar way, the second change is related with the ``variable uniform crossover probability'' which is incremented from $0.0$ to $0.5$ as is indicated in the equation (\ref{eqn:linear}).
+%
+This modification is motivated to avoid the disruptive behavior of interchange the variables at first generations, once that the individuals converged to certain grade (to half of total generations) this probability is fixed to $0.5$.
+\begin{equation}\label{eqn:linear}
+	\delta_1 = \delta_2 = max \left (0.5, 1.0 - \frac{T_{Elapsed}}{T_{End}} \right )
 \end{equation}
 
 %
-Finally, the index distribution change among the execution, where at the first stages it is low inducing a high degree of exploration and is incremented to the last stages as indicate the equation (\ref{eq:index_eta}).
-\begin{equation}\label{eq:index_eta}
+Finally, the distribution index changes among the execution, where at the first stages a low distribution index induces an open distribution curve and it is linearly incremented producing a close distribution curve, this linear increment is indicated in the equation (\ref{eqn:index_eta}).
+%
+Particularly, this dynamic change has been showed in the literature with the polynomial mutation \cite{zitzler1999multiobjective}.
+%
+Also has been shown that a low distribution index provides reasonable quality solutions \cite{hamdan2012distribution}.
+
+\begin{equation}\label{eqn:index_eta}
  \eta_c = 2 + 20 \times \left ( \frac{T_{Elapsed}}{T_{End}} \right)
 \end{equation}
+
+
+\subsection{The relevance of isolated components}
+
+In this section we show the effect of each of the three components previously mentioned of the SBX.
+%
+In general is applied the same configuration as is indicated in the Section \ref{Experimental_Validation}.
+%
+Particularly, the jMetalcpp \cite{Joel:jMetal} framework was used to perform our executions.
+%
+Taking into account the stochastic behavior of MOEAs, $35$ independent executions were run.
+%
+In all of them, the stopping criteria was set to $25,000$ generations and the size of the population was fixed to $100$.
+%
+The effect of each component is analyzed through four cases, based in the algorithm \ref{alg:SBX_Operator} each case is described as follows:
+\begin{itemize}
+\item \textbf{Case 1}: The standard SBX operator where $\delta_1 = \delta_2 = 0.5$ and $\eta_c = 20$.
+\item \textbf{Case 2}: $\delta_1$ changes according the equation (\ref{eqn:linear}),  $\delta_2=0.5$ and $\eta_c = 20$.
+\item \textbf{Case 3}: $\delta_2$ changes according the equation (\ref{eqn:linear}), $\delta_1=0.5$ and $\delta_c = 20$.
+\item \textbf{Case 4}: The distribution index changes according the equation (\ref{eqn:index_eta}), $\delta_1=\delta_2=0.5$.
+\end{itemize}
+
+
+In order to analyze the performance of each Case (Case 5 is ignored), the tables \ref{tab:statistical_Tests}, \ref{tab:Metrics_2} and \ref{tab:Metrics_3} shows information of the Normalized Hyper-volume (HV) \cite{zitzler1999multiobjective} and the Inverted Generational Distance Plus (IGD+) \cite{Joel:IGDPlus_And_GDPlus}.
+%
+In the table \ref{tab:statistical_Tests} is showed a summary of the statistical tests, where are considered the HV and IGD+ both in two and three objectives.
+%
+The Case 4 which correspond to the dynamic distribution index, presents the best results than the Case 1, Case 2 and Case 3, due that it has more wins in the state-of-the-art MOEAs, also it has a less number of lost.
+%
+Thus, increasing the distribution index provokes an suitable behavior to aim a balance between exploration and intensification, due that even if at the first generations the diversity is not enough, it could be increased since that the curve of distribution is open, hence it might generate dissimilar individuals and increase the diversity of the population.
+%
+In the second place is the Case 3, it increases the probability of interchange a variable based in a linear model, this might occurs because in the first stages is avoided a disruptive behavior, and in a gradual way the search process explores the interest regions, although that this case is not the best, it still outperforms the standard SBX (Case 1).
+%
+%Also can be noticed that the results of the HV are similar that with the IGD+.
+%
+The average of HV and IGD+ for two and three objectives are showed in the tables \ref{tab:Metrics_2} and \ref{tab:Metrics_3}, it shows that the Case 4 outperforms the Case 1, Case 2 and Case 3 with two and three objectives.
+%
+On the other hand, just considering the averages, the Case 2 is worse than the Case 1, this might occurs because altering almost all the variables with the SBX distribution could induce very dissimilar and distant children.
+%
+Perhaps, modifying this linear model (i.e. from $0.4$ to $0.5$) could provide a better behavior.
+%
+It is important to take into account that in some situations the statistical test indicate a superiority, however the average of the metrics are of low quality, this occurs because a determined case provide high quality solutions for some problems and very low quality solutions for other problems, generally speaking in long-term executions is desirable to obtain stable and well converged solutions.
+%
+
+Based in the previously analyses, a variant of the SBX is proposed, where the Case 3 and Case 4 are joined.
+%
+Therefore, based in algorithm \ref{alg:SBX_Operator} our proposal is configured as follows.
+%
+As is usual the parameter $\delta_1$ is fixed to $0.5$, based in the Case 3 the $\delta_2$ is changed according the equation (\ref{eqn:linear}) and based in the Case 3 the distribution index ($\eta_c$) is changed according the equation (\ref{eqn:index_eta}).
+%
+Hence, an important advantage is that our proposal will be more stable in relation with the distribution index.
+
+
+
+
 

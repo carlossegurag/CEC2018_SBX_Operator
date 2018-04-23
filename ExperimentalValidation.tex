@@ -1,204 +1,145 @@
-This section is devoted to validate our proposal.
+This section is devoted to validate our proposal named as ``Case 5''.
 %
-The nine WFG tests proposed in ref 10 have been used for out purpose.
+The WFG \cite{Joel:WFG}, DTLZ \cite{Joel:DTLZ_2} and UF \cite{zhang2009performance} test problems have been used for our purpose.
 %
-Our experimental validation includ
+Our experimental validation includes the Differential Evolution based variants DEMO such strategy is explained in \cite{tuvsar2007differential}.
 %
-Given thath all of them are stochastic algorithms, each execution was repeated $35$ times with different seeds.
+Given that all of them are stochastic algorithms, each execution was repeated $35$ times with different seeds.
 %
-
-Our experimental analysis has been performed in base of attainment surfaces, hypervolume and IGD+.
+The common configuration in all of them was the following: the stopping criterion was set to $25,000$ generations, the population size was fixed to 100, the WFG test problems were configured with two and three objectives, setting 24 parameters, where 20 of them are distance parameters and 4 are position parameters.
 %
-In order to comparate the hypervolume results, a similar guideline than the one proposed in ref27 was used.
+Specifically, in the DTLZ test instances, the number of decision variables is set to $n=M+r-1$, where $r=\{5, 10, 20\}$ for DTLZ1, DTLZ2 to DTLZ6 and DTLZ7 respectively, as is suggested by the authors \cite{Joel:DTLZ_2}.  
+% 
+The UF benchmark is composed of ten test instances, where the first seven are of two objectives and the rest with three objectives, the number of decision variables is assigned to $n=10$.
 %
-First a Shapiro-Wilk test was performed to check wahtever or not the values of the results followed a Gaussian distribution.
+In general, the crossover and mutation operators are SBX and polynomial respectively, with a crossover probability of 0.9 and mutation probability of $1/n$, also the crossover and mutation distribution indexes were assigned to 20 and 50 respectively.
 %
-If, so, the Levene test was used to check for the homogeneity of the variances.
+The extra parametrization of each algorithm is as follows:
+\begin{itemize}
+\item \textbf{DE-Variants}: CR = 0.3 and F = 0.5.
+\item \textbf{SMS-EMOA}: offset = 100.
+\item \textbf{MOEA/D}: size of neighborhood = 10, max updates by sub-problem (nr) = 2 and $\delta = 0.9$.
+\end{itemize}
 %
-If samples had equal variance, an ANOVA test was done;
+Our experimental analysis has been performed in base of the Normalized HV and IGD+.
 %
-if not, a Welch test was performed.
-%
-For non-Gaussian distributions, the non-parametric Kruskal-Wallis test was used to test whether samples are drawn from the same distribution.
-%
-An algoritm $X$ is said to win an algorithm $Y$ when the differences between them are statiscally significant, and the mean and median and mean obtained by $X$ are higher than the mean and median achieved by $Y$.
-
-La validación experimental se implementa considerando tres sub-secciones:
-1) Gráfica de barras considerando dos y tres objetivos, que corresponden a la media del hipervolumen y el IGD+ de todas las instancias.
-2) Pruebas estadísticas comparación entre la forma estándar y cada forma individual. --- la propuesta y cada forma individual + DE.
-3) Tabla de resultados estadísticos de la media, con 23 filas y cada forma con cada forma con cada algoritmo.
+The reference points implemented in the hypervolume indicator are showed in the table \ref{tab:ReferencePoints} as used in \cite{Joel:Kuhn_Munkres, Joel:OperatorAHX}.
 
 
-\begin{table*}[]
+In order to statistically compare the hypervolume results, a similar guideline than the proposed in \cite{Joel:StatisticalTest} was used. 
+%
+First a Shapiro-Wilk test was performed to check whatever or not the values of the results followed a Gaussian distribution. 
+%
+If, so, the Levene test was used to check for the homogeneity of the variances. 
+%
+If samples had equal variance, an ANOVA test was done; if not, a Welch test was performed. 
+%
+For non-Gaussian distributions, the nonparametric Kruskal-Wallis test was used to test whether samples are drawn from the same distribution. 
+%
+An algorithm $X$ is said to win algorithm $Y$ when the differences between them are statistically significant, if the mean and median obtained by $X$ are higher than the mean and median achieved by $Y$.
+%
+
+In addition, pair-wise statistical tests with HV and IGD+ were performed (Table \ref{tab:statistical_Tests}).
+%
+For each instance, the column ``$\uparrow$'' reports the number of comparisons where the statistical tests confirmed the superiority of the MOEA listed in the corresponding group, whereas the column ``$\downarrow$'' reports the number of cases where it was inferior and ``$\longleftrightarrow$'' indicates that are not significantly different and is considered as a tie.
+%%
+
+
+Based in the statistical tests\footnote{DE is not considered in the statistical tests.} (table \ref{tab:statistical_Tests}), generally speaking our proposal (Case 5) has the best scores.
+%
+Our proposal is outperformed by the Case 4 considering three objectives by the NSGA-II, this might occurs due that this MOEA applies a binary tournament selection where is considered the dominance concept, thus some level of diversity is maintained, therefore in some problems some optimal regions are reached, and with other problems the solutions could be far from the Pareto front.
+%
+Although that in average the metrics are similar between the Case 4 and our proposal with three objectives, the average difference with the best indicates that our proposal is the closest to the best since that it shows in the ``Average Best Difference'' IGD+ with $0.020$ against the Case 4 with $0.023$.
+%
+Also, inspecting the statistical test, the Case 4 has more lost than our proposal $10$ against $9$ and $15$ against $9$ of the HV and IGD+ respectively.
+%
+However, the MOEA/D and SMS-EMOA which are more elitist algorithms and do not consider the dominance concept at all, are not affected in this sense.
+%
+Anyway, our proposal and the Case 3 reports significantly better results that the normal SBX (Case 1), in fact this could evidence that variate the distribution index among the execution has an important effect.
+
+
+In order to better understand the behavior of our proposal, the tables \ref{tab:Metrics_2} and \ref{tab:Metrics_3} shows a summary average of Normalized HV and IGD+ considering all the instances\footnote{The detailed results can be consulted in the web page https:\//\//github.com\//joelchaconcastillo\//SBX\_CEC2018.}.
+%
+Also is counted the number of instances which attain the best results labeled by ``Best Counts''.
+%
+Additionally, the average of difference with the best result is showed, this aims to provide a metric which indicates the difference with the best result attained in each problem.
+%
+Although that DE improves our proposal with two objectives, in the table \ref{tab:Metrics_2}  is showed that our proposal provides near results than the bests.
+%
+
+On the other hand our proposal provides the best results considering three objectives, it is interesting remark that the performance of DE is seriously deteriorated according increases the number of objectives. 
+%
+Despite the fact that DE variants have high ``Best Count'' values, in average it is improved by the Case 4 and Case 5, this might occurs because DE is directly influence by the parameters (CR and FR), therefore in some instances the DE variants attains the best results, and in other instances the solutions are far from the Pareto front.
+%
+
+On the other hand, our proposal shows a robust behavior in the state-of-the-art MOEAs, in fact the ``Average Best Difference'' is low both with two objectives and three objectives that confirms the stability and superiority of our proposal.
+%
+\begin{table}[t]
 \centering
-\caption{Mean of the normalized hypervolume with two objectives}
-\label{my-label}
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\cline{2-19}
- & \multicolumn{3}{c|}{Case 1} & \multicolumn{3}{c|}{Case 2} & \multicolumn{3}{c|}{Case 3} & \multicolumn{3}{c|}{Case4} & \multicolumn{3}{c|}{Case 5} & \multicolumn{3}{c|}{DE} \\ \cline{2-19} 
- & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C \\ \hline
-\multicolumn{1}{|c|}{DTLZ1} & 1.00 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{DTLZ2} & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{DTLZ3} & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 0.99 & 0.99 & 0.98 \\ \hline
-\multicolumn{1}{|c|}{DTLZ4} & 0.84 & 0.78 & 0.76 & 0.72 & 0.78 & 0.74 & 0.82 & 0.78 & 0.68 & 0.92 & 0.86 & 0.74 & 0.96 & 0.84 & 0.76 & 0.98 & 0.99 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{DTLZ5} & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{DTLZ6} & 0.71 & 0.71 & 0.72 & 0.81 & 0.95 & 0.85 & 0.72 & 0.71 & 0.71 & 0.95 & 0.96 & 0.95 & 0.97 & 0.97 & 0.97 & 0.99 & 1.00 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{DTLZ7} & 0.99 & 0.99 & 1.00 & 0.99 & 0.99 & 1.00 & 0.92 & 0.99 & 0.71 & 0.99 & 0.99 & 1.00 & 0.80 & 0.99 & 1.00 & 0.96 & 0.99 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{UF1} & 0.90 & 0.97 & 0.93 & 0.91 & 0.95 & 0.93 & 0.92 & 0.98 & 0.93 & 0.94 & 0.98 & 0.94 & 0.97 & 1.00 & 0.99 & 0.97 & 0.97 & 0.97 \\ \hline
-\multicolumn{1}{|c|}{UF2} & 0.94 & 0.98 & 0.97 & 0.96 & 0.97 & 0.97 & 0.95 & 0.99 & 0.98 & 0.97 & 0.99 & 0.98 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{UF3} & 0.70 & 0.79 & 0.72 & 0.69 & 0.79 & 0.71 & 0.79 & 0.92 & 0.90 & 0.70 & 0.81 & 0.72 & 0.93 & 0.96 & 0.95 & 0.83 & 0.84 & 0.87 \\ \hline
-\multicolumn{1}{|c|}{UF4} & 0.97 & 0.96 & 0.97 & 0.96 & 0.96 & 0.97 & 0.97 & 0.96 & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.96 & 0.97 & 0.97 & 0.97 & 0.97 \\ \hline
-\multicolumn{1}{|c|}{UF5} & 0.38 & 0.49 & 0.51 & 0.37 & 0.51 & 0.51 & 0.44 & 0.57 & 0.54 & 0.45 & 0.64 & 0.62 & 0.46 & 0.57 & 0.53 & 0.45 & 0.81 & 0.80 \\ \hline
-\multicolumn{1}{|c|}{UF6} & 0.71 & 0.78 & 0.77 & 0.70 & 0.79 & 0.76 & 0.70 & 0.81 & 0.75 & 0.69 & 0.78 & 0.77 & 0.64 & 0.79 & 0.75 & 0.70 & 0.85 & 0.83 \\ \hline
-\multicolumn{1}{|c|}{UF7} & 0.74 & 0.88 & 0.79 & 0.76 & 0.85 & 0.81 & 0.69 & 0.83 & 0.75 & 0.78 & 0.88 & 0.88 & 0.72 & 0.96 & 0.85 & 0.86 & 0.98 & 0.96 \\ \hline
-\multicolumn{1}{|c|}{WFG1} & 0.81 & 0.86 & 0.75 & 0.93 & 0.88 & 0.87 & 0.84 & 0.86 & 0.75 & 0.99 & 0.98 & 0.98 & 0.96 & 0.98 & 0.95 & 0.96 & 0.91 & 0.86 \\ \hline
-\multicolumn{1}{|c|}{WFG2} & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.97 & 0.96 & 0.97 & 0.97 & 0.97 & 0.97 & 0.98 & 0.98 & 1.00 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{WFG3} & 0.99 & 0.98 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 & 0.99 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{WFG4} & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{WFG5} & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 & 0.85 \\ \hline
-\multicolumn{1}{|c|}{WFG6} & 0.87 & 0.86 & 0.87 & 0.87 & 0.87 & 0.88 & 0.88 & 0.88 & 0.88 & 0.89 & 0.88 & 0.89 & 0.92 & 0.92 & 0.92 & 0.90 & 0.91 & 0.92 \\ \hline
-\multicolumn{1}{|c|}{WFG7} & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 & 0.98 & 0.98 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{WFG8} & 0.78 & 0.75 & 0.78 & 0.78 & 0.75 & 0.78 & 0.80 & 0.78 & 0.81 & 0.78 & 0.75 & 0.78 & 0.95 & 0.78 & 0.81 & 0.79 & 0.78 & 0.80 \\ \hline
-\multicolumn{1}{|c|}{WFG9} & 0.89 & 0.79 & 0.89 & 0.89 & 0.81 & 0.89 & 0.91 & 0.89 & 0.93 & 0.89 & 0.80 & 0.87 & 0.96 & 0.96 & 0.97 & 0.76 & 0.73 & 0.74 \\ \hline
-\multicolumn{1}{|c|}{Average} & 0.87 & 0.88 & 0.88 & 0.87 & 0.90 & 0.89 & 0.87 & 0.90 & 0.87 & 0.90 & 0.91 & 0.91 & 0.91 & 0.93 & 0.92 & 0.91 & 0.94 & 0.93 \\ \hline
+\scriptsize
+\caption{References points for the HV indicator}
+\label{tab:ReferencePoints}
+\begin{tabular}{cc}
+\hline
+\textbf{Instances} & \textbf{Reference Point} \\ \hline
+WFG1-WFG9 & $[2.1, ...,2m+0.1]$ \\
+DTLZ 1, 2, 4 & $[1.1, ..., 1.1]$ \\
+DTLZ 3, 5, 6 & $[3, ..., 3]$ \\
+DTLZ7 & $[1.1, ..., 1.1, 2m]$ \\
+UF 1-10 & $[2, ..., 2]$ \\ \hline
 \end{tabular}
-\end{table*}
+\end{table}
+% % Please add the following required packages to your document preamble:
+% % \usepackage{multirow}
+% % \usepackage{graphicx}
+% \begin{table*}[]
+% \centering
+% \caption{Statistical Information of Metrics}
+% \label{my-label}
+% \resizebox{\textwidth}{!}{%
+% \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
+% \hline
+% \multicolumn{2}{|l|}{\multirow{2}{*}{}} & \multicolumn{6}{c|}{NSGA-II} & \multicolumn{6}{c|}{MOEA/D} & \multicolumn{6}{c|}{SMS-EMOA} \\ \cline{3-20} 
+% \multicolumn{2}{|l|}{} & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 & 1 & 2 & 3 & 4 & 5 & 6 \\ \hline
+% \multirow{6}{*}{2 Objectives} & Average HV & 0.88 & 0.90 & 0.90 & 0.91 & 0.93 & \textbf{0.94} & 0.87 & 0.87 & 0.87 & 0.90 & \textbf{0.91} & \textbf{0.91} & 0.88 & 0.89 & 0.87 & 0.91 & 0.92 & \textbf{0.93} \\ \cline{2-20} 
+%  & Best Counts HV & 2 & 1 & 0 & 1 & 8 & \textbf{11} & 2 & 0 & 2 & 2 & 8 & \textbf{9} & 0 & 1 & 1 & 5 & 6 & \textbf{10} \\ \cline{2-20} 
+%  & \multicolumn{1}{l|}{Average Best Difference HV} & \multicolumn{1}{l|}{0.068} & \multicolumn{1}{l|}{0.057} & \multicolumn{1}{l|}{0.053} & \multicolumn{1}{l|}{0.039} & \multicolumn{1}{l|}{0.019} & \multicolumn{1}{l|}{\textbf{0.017}} & \multicolumn{1}{l|}{0.053} & \multicolumn{1}{l|}{0.048} & \multicolumn{1}{l|}{0.049} & \multicolumn{1}{l|}{0.024} & \multicolumn{1}{l|}{\textbf{0.013}} & \multicolumn{1}{l|}{0.014} & \multicolumn{1}{l|}{0.074} & \multicolumn{1}{l|}{0.064} & \multicolumn{1}{l|}{0.081} & \multicolumn{1}{l|}{0.045} & \multicolumn{1}{l|}{0.028} & \multicolumn{1}{l|}{\textbf{0.019}} \\ \cline{2-20} 
+%  & Average IGD+ & 0.12 & 0.09 & 0.11 & 0.07 & 0.06 & \textbf{0.05} & 0.14 & 0.12 & 0.14 & 0.09 & 0.08 & \textbf{0.07} & 0.13 & 0.11 & 0.14 & 0.08 & 0.07 & \textbf{0.05} \\ \cline{2-20} 
+%  & Best Counts IGD+ & 2 & 1 & 1 & 1 & 8 & \textbf{10} & 3 & 0 & 2 & 3 & 6 & \textbf{9} & 0 & 2 & 0 & 3 & \textbf{9} & \textbf{9} \\ \cline{2-20} 
+%  & \multicolumn{1}{l|}{Average Best Difference IGD+} & \multicolumn{1}{l|}{0.086} & \multicolumn{1}{l|}{0.052} & \multicolumn{1}{l|}{0.077} & \multicolumn{1}{l|}{0.035} & \multicolumn{1}{l|}{0.021} & \multicolumn{1}{l|}{\textbf{0.016}} & \multicolumn{1}{l|}{0.075} & \multicolumn{1}{l|}{0.059} & \multicolumn{1}{l|}{0.072} & \multicolumn{1}{l|}{0.025} & \multicolumn{1}{l|}{0.019} & \multicolumn{1}{l|}{\textbf{0.008}} & \multicolumn{1}{l|}{0.093} & \multicolumn{1}{l|}{0.071} & \multicolumn{1}{l|}{0.101} & \multicolumn{1}{l|}{0.038} & \multicolumn{1}{l|}{0.030} & \multicolumn{1}{l|}{\textbf{0.017}} \\ \hline
+% \multirow{6}{*}{3 Objectives} & Average HV & \textbf{0.87} & 0.84 & \textbf{0.87} & \textbf{0.87} & \textbf{0.87} & 0.85 & 0.84 & 0.84 & 0.84 & \textbf{0.86} & \textbf{0.86} & 0.85 & 0.90 & 0.89 & 0.88 & \textbf{0.91} & \textbf{0.91} & \textbf{0.91} \\ \cline{2-20} 
+%  & Best Counts HV & 1 & 2 & 1 & 4 & 4 & \textbf{7} & 1 & 2 & 1 & 2 & 5 & \textbf{8} & 3 & 2 & 0 & 2 & 5 & \textbf{7} \\ \cline{2-20} 
+%  & \multicolumn{1}{l|}{Average Best Difference HV} & \multicolumn{1}{l|}{0.019} & \multicolumn{1}{l|}{0.047} & \multicolumn{1}{l|}{0.020} & \multicolumn{1}{l|}{\textbf{0.014}} & \multicolumn{1}{l|}{\textbf{0.014}} & \multicolumn{1}{l|}{0.032} & \multicolumn{1}{l|}{0.036} & \multicolumn{1}{l|}{0.041} & \multicolumn{1}{l|}{0.038} & \multicolumn{1}{l|}{0.016} & \multicolumn{1}{l|}{\textbf{0.013}} & \multicolumn{1}{l|}{0.027} & \multicolumn{1}{l|}{0.038} & \multicolumn{1}{l|}{0.038} & \multicolumn{1}{l|}{0.049} & \multicolumn{1}{l|}{\textbf{0.019}} & \multicolumn{1}{l|}{0.027} & \multicolumn{1}{l|}{\textbf{0.019}} \\ \cline{2-20} 
+%  & Average IGD+ & 0.13 & 0.16 & 0.13 & \textbf{0.12} & \textbf{0.12} & 0.13 & 0.15 & 0.14 & 0.15 & \textbf{0.11} & \textbf{0.11} & 0.13 & 0.11 & 0.11 & 0.13 & \textbf{0.09} & \textbf{0.09} & 0.13 \\ \cline{2-20} 
+%  & Best Counts IGD+ & 0 & 2 & 2 & 4 & 3 & \textbf{8} & 2 & 2 & 0 & 2 & 4 & \textbf{9} & 1 & 3 & 0 & 3 & 5 & \textbf{7} \\ \cline{2-20} 
+%  & \multicolumn{1}{l|}{Average Best Difference IGD+} & \multicolumn{1}{l|}{0.029} & \multicolumn{1}{l|}{0.061} & \multicolumn{1}{l|}{0.027} & \multicolumn{1}{l|}{0.023} & \multicolumn{1}{l|}{\textbf{0.020}} & \multicolumn{1}{l|}{0.032} & \multicolumn{1}{l|}{0.053} & \multicolumn{1}{l|}{0.048} & \multicolumn{1}{l|}{0.053} & \multicolumn{1}{l|}{\textbf{0.015}} & \multicolumn{1}{l|}{\textbf{0.015}} & \multicolumn{1}{l|}{0.030} & \multicolumn{1}{l|}{0.047} & \multicolumn{1}{l|}{0.040} & \multicolumn{1}{l|}{0.062} & \multicolumn{1}{l|}{\textbf{0.020}} & \multicolumn{1}{l|}{0.024} & \multicolumn{1}{l|}{0.069} \\ \hline
+% \end{tabular}%
+% }
+% \end{table*}
 
 
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-\begin{table*}[]
-\centering
-\caption{Mean of the IGD+ with two objectives}
-\label{my-label}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\cline{2-19}
- & \multicolumn{3}{c|}{Case 1} & \multicolumn{3}{c|}{Case 2} & \multicolumn{3}{c|}{Case 3} & \multicolumn{3}{c|}{Case4} & \multicolumn{3}{c|}{Case 5} & \multicolumn{3}{c|}{DE} \\ \cline{2-19} 
- & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C \\ \hline
-\multicolumn{1}{|c|}{DTLZ1} & 0.001 & 0.002 & 0.001 & 0.001 & 0.002 & 0.001 & 0.001 & 0.002 & 0.001 & 0.001 & 0.002 & 0.001 & 0.001 & 0.002 & 0.001 & 0.001 & 0.002 & 0.001 \\ \hline
-\multicolumn{1}{|c|}{DTLZ2} & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{DTLZ3} & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.031 & 0.059 \\ \hline
-\multicolumn{1}{|c|}{DTLZ4} & 0.074 & 0.106 & 0.115 & 0.136 & 0.106 & 0.126 & 0.085 & 0.106 & 0.157 & 0.033 & 0.064 & 0.126 & 0.013 & 0.075 & 0.115 & 0.002 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{DTLZ5} & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 & 0.002 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{DTLZ6} & 0.975 & 0.985 & 0.958 & 0.686 & 0.237 & 0.580 & 0.958 & 0.993 & 0.997 & 0.224 & 0.203 & 0.219 & 0.142 & 0.122 & 0.145 & 0.021 & 0.017 & 0.024 \\ \hline
-\multicolumn{1}{|c|}{DTLZ7} & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 & 0.054 & 0.003 & 0.197 & 0.003 & 0.003 & 0.002 & 0.136 & 0.003 & 0.002 & 0.024 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{UF1} & 0.058 & 0.028 & 0.063 & 0.044 & 0.042 & 0.060 & 0.043 & 0.022 & 0.057 & 0.022 & 0.016 & 0.038 & 0.014 & 0.007 & 0.017 & 0.021 & 0.027 & 0.031 \\ \hline
-\multicolumn{1}{|c|}{UF2} & 0.037 & 0.016 & 0.017 & 0.026 & 0.018 & 0.021 & 0.034 & 0.013 & 0.016 & 0.018 & 0.014 & 0.013 & 0.006 & 0.014 & 0.010 & 0.005 & 0.015 & 0.011 \\ \hline
-\multicolumn{1}{|c|}{UF3} & 0.210 & 0.126 & 0.181 & 0.214 & 0.127 & 0.193 & 0.167 & 0.066 & 0.075 & 0.209 & 0.105 & 0.179 & 0.065 & 0.060 & 0.060 & 0.095 & 0.188 & 0.126 \\ \hline
-\multicolumn{1}{|c|}{UF4} & 0.036 & 0.044 & 0.035 & 0.040 & 0.045 & 0.038 & 0.039 & 0.045 & 0.038 & 0.033 & 0.043 & 0.033 & 0.039 & 0.045 & 0.038 & 0.035 & 0.035 & 0.035 \\ \hline
-\multicolumn{1}{|c|}{UF5} & 0.724 & 0.583 & 0.532 & 0.740 & 0.546 & 0.526 & 0.643 & 0.485 & 0.513 & 0.628 & 0.393 & 0.392 & 0.634 & 0.488 & 0.523 & 0.618 & 0.225 & 0.223 \\ \hline
-\multicolumn{1}{|c|}{UF6} & 0.309 & 0.233 & 0.233 & 0.309 & 0.208 & 0.246 & 0.340 & 0.214 & 0.267 & 0.321 & 0.230 & 0.234 & 0.450 & 0.257 & 0.312 & 0.308 & 0.153 & 0.174 \\ \hline
-\multicolumn{1}{|c|}{UF7} & 0.234 & 0.104 & 0.190 & 0.218 & 0.138 & 0.171 & 0.279 & 0.146 & 0.238 & 0.205 & 0.108 & 0.115 & 0.269 & 0.039 & 0.142 & 0.131 & 0.026 & 0.050 \\ \hline
-\multicolumn{1}{|c|}{WFG1} & 0.207 & 0.148 & 0.287 & 0.076 & 0.126 & 0.145 & 0.180 & 0.146 & 0.281 & 0.014 & 0.016 & 0.016 & 0.038 & 0.020 & 0.050 & 0.038 & 0.092 & 0.154 \\ \hline
-\multicolumn{1}{|c|}{WFG2} & 0.055 & 0.052 & 0.057 & 0.055 & 0.053 & 0.053 & 0.060 & 0.054 & 0.059 & 0.072 & 0.053 & 0.052 & 0.055 & 0.053 & 0.048 & 0.042 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{WFG3} & 0.008 & 0.012 & 0.007 & 0.008 & 0.014 & 0.007 & 0.008 & 0.012 & 0.007 & 0.008 & 0.012 & 0.007 & 0.008 & 0.012 & 0.007 & 0.008 & 0.011 & 0.007 \\ \hline
-\multicolumn{1}{|c|}{WFG4} & 0.007 & 0.008 & 0.005 & 0.007 & 0.010 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.008 & 0.005 \\ \hline
-\multicolumn{1}{|c|}{WFG5} & 0.068 & 0.066 & 0.065 & 0.068 & 0.067 & 0.067 & 0.068 & 0.066 & 0.065 & 0.068 & 0.066 & 0.065 & 0.069 & 0.066 & 0.066 & 0.068 & 0.066 & 0.066 \\ \hline
-\multicolumn{1}{|c|}{WFG6} & 0.063 & 0.059 & 0.055 & 0.065 & 0.057 & 0.054 & 0.055 & 0.053 & 0.051 & 0.049 & 0.049 & 0.049 & 0.034 & 0.035 & 0.034 & 0.040 & 0.036 & 0.034 \\ \hline
-\multicolumn{1}{|c|}{WFG7} & 0.007 & 0.009 & 0.005 & 0.007 & 0.009 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.008 & 0.005 & 0.007 & 0.007 & 0.005 \\ \hline
-\multicolumn{1}{|c|}{WFG8} & 0.112 & 0.124 & 0.112 & 0.111 & 0.124 & 0.113 & 0.097 & 0.107 & 0.095 & 0.113 & 0.124 & 0.113 & 0.026 & 0.101 & 0.089 & 0.102 & 0.107 & 0.099 \\ \hline
-\multicolumn{1}{|c|}{WFG9} & 0.049 & 0.099 & 0.050 & 0.047 & 0.087 & 0.051 & 0.038 & 0.051 & 0.033 & 0.049 & 0.095 & 0.061 & 0.016 & 0.015 & 0.011 & 0.111 & 0.125 & 0.124 \\ \hline
-\multicolumn{1}{|c|}{Average} & 0.14 & 0.12 & 0.13 & 0.12 & 0.09 & 0.11 & 0.14 & 0.11 & 0.14 & 0.09 & 0.07 & 0.08 & 0.09 & 0.06 & 0.07 & 0.07 & 0.05 & 0.05 \\ \hline
-\end{tabular}%
-}
-\end{table*}
+% \begin{figure}[!t]
+% \centering
+% \includegraphics[scale=0.25,angle=-90]{img/bar_HV_2obj.eps}
+% \caption{Average of normalized hypervolume considering all the instances and two objective.}
+% \label{fig_sim}
+% \end{figure}
+% \begin{figure}[]
+% \centering
+% \includegraphics[scale=0.25,angle=-90]{img/bar_IGD_2obj.eps}
+% \caption{Average of Inverted Genralized Distance Plus (IGD+) considering all the instances and two objective.}
+% \label{fig_sim}
+% \end{figure}
 
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-\begin{table*}[]
-\centering
-\caption{Mean of the normalized hypervolume with three objectives}
-\label{my-label}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\cline{2-19}
- & \multicolumn{3}{c|}{Case 1} & \multicolumn{3}{c|}{Case 2} & \multicolumn{3}{c|}{Case 3} & \multicolumn{3}{c|}{Case4} & \multicolumn{3}{c|}{Case 5} & \multicolumn{3}{c|}{DE} \\ \cline{2-19} 
- & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C \\ \hline
-\multicolumn{1}{|c|}{DTLZ1} & 0.99 & 0.99 & 1.00 & 0.98 & 0.99 & 1.00 & 0.99 & 0.99 & 1.00 & 0.99 & 0.99 & 1.00 & 0.99 & 0.99 & 1.00 & 0.98 & 0.99 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{DTLZ2} & 0.89 & 0.89 & 0.95 & 0.89 & 0.88 & 0.95 & 0.89 & 0.88 & 0.95 & 0.89 & 0.89 & 0.95 & 0.89 & 0.88 & 0.95 & 0.88 & 0.90 & 0.95 \\ \hline
-\multicolumn{1}{|c|}{DTLZ3} & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 0.99 & 0.93 \\ \hline
-\multicolumn{1}{|c|}{DTLZ4} & 0.73 & 0.89 & 0.71 & 0.63 & 0.88 & 0.72 & 0.77 & 0.87 & 0.76 & 0.87 & 0.90 & 0.83 & 0.82 & 0.89 & 0.82 & 0.88 & 0.90 & 0.95 \\ \hline
-\multicolumn{1}{|c|}{DTLZ5} & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 & 0.99 & 1.00 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{DTLZ6} & 0.87 & 0.95 & 0.92 & 0.92 & 1.00 & 0.95 & 0.88 & 0.95 & 0.92 & 0.96 & 0.97 & 0.97 & 0.97 & 0.98 & 0.98 & 0.99 & 1.00 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{DTLZ7} & 0.89 & 0.91 & 0.87 & 0.90 & 0.89 & 0.88 & 0.78 & 0.85 & 0.61 & 0.90 & 0.91 & 0.89 & 0.89 & 0.91 & 0.90 & 0.85 & 0.93 & 0.90 \\ \hline
-\multicolumn{1}{|c|}{UF10} & 0.52 & 0.72 & 0.68 & 0.62 & 0.70 & 0.65 & 0.52 & 0.71 & 0.62 & 0.55 & 0.75 & 0.71 & 0.49 & 0.63 & 0.51 & 0.63 & 0.66 & 0.82 \\ \hline
-\multicolumn{1}{|c|}{UF8} & 0.90 & 0.85 & 0.91 & 0.87 & 0.81 & 0.86 & 0.83 & 0.91 & 0.91 & 0.91 & 0.84 & 0.89 & 0.82 & 0.87 & 0.85 & 0.93 & 0.78 & 0.84 \\ \hline
-\multicolumn{1}{|c|}{UF9} & 0.90 & 0.94 & 0.99 & 0.89 & 0.96 & 0.99 & 0.94 & 0.99 & 0.99 & 0.92 & 0.93 & 0.99 & 0.94 & 0.95 & 0.97 & 0.96 & 0.88 & 1.01 \\ \hline
-\multicolumn{1}{|c|}{WFG1} & 0.93 & 0.93 & 0.93 & 0.81 & 0.45 & 0.93 & 0.93 & 0.93 & 0.93 & 0.95 & 0.93 & 0.99 & 0.94 & 0.93 & 0.98 & 0.71 & 0.95 & 0.91 \\ \hline
-\multicolumn{1}{|c|}{WFG2} & 0.86 & 0.91 & 0.90 & 0.85 & 0.91 & 0.90 & 0.87 & 0.91 & 0.91 & 0.88 & 0.96 & 0.98 & 0.92 & 0.96 & 0.99 & 0.95 & 0.97 & 0.99 \\ \hline
-\multicolumn{1}{|c|}{WFG3} & 0.99 & 0.98 & 0.99 & 0.98 & 0.97 & 0.99 & 0.99 & 0.98 & 0.99 & 0.99 & 0.97 & 1.00 & 0.99 & 0.98 & 1.00 & 0.99 & 0.97 & 1.00 \\ \hline
-\multicolumn{1}{|c|}{WFG4} & 0.81 & 0.83 & 0.92 & 0.81 & 0.81 & 0.92 & 0.81 & 0.82 & 0.92 & 0.81 & 0.83 & 0.92 & 0.81 & 0.83 & 0.92 & 0.80 & 0.75 & 0.92 \\ \hline
-\multicolumn{1}{|c|}{WFG5} & 0.73 & 0.76 & 0.84 & 0.73 & 0.75 & 0.84 & 0.73 & 0.76 & 0.84 & 0.73 & 0.77 & 0.84 & 0.73 & 0.76 & 0.84 & 0.73 & 0.76 & 0.84 \\ \hline
-\multicolumn{1}{|c|}{WFG6} & 0.75 & 0.75 & 0.85 & 0.74 & 0.74 & 0.85 & 0.75 & 0.76 & 0.86 & 0.75 & 0.76 & 0.86 & 0.76 & 0.79 & 0.88 & 0.71 & 0.76 & 0.88 \\ \hline
-\multicolumn{1}{|c|}{WFG7} & 0.82 & 0.83 & 0.92 & 0.82 & 0.83 & 0.92 & 0.82 & 0.83 & 0.92 & 0.82 & 0.83 & 0.92 & 0.82 & 0.83 & 0.92 & 0.82 & 0.78 & 0.92 \\ \hline
-\multicolumn{1}{|c|}{WFG8} & 0.70 & 0.65 & 0.79 & 0.70 & 0.64 & 0.79 & 0.72 & 0.63 & 0.80 & 0.70 & 0.66 & 0.79 & 0.80 & 0.65 & 0.80 & 0.71 & 0.60 & 0.79 \\ \hline
-\multicolumn{1}{|c|}{WFG9} & 0.74 & 0.68 & 0.84 & 0.76 & 0.72 & 0.86 & 0.75 & 0.67 & 0.88 & 0.75 & 0.68 & 0.84 & 0.79 & 0.66 & 0.87 & 0.67 & 0.66 & 0.74 \\ \hline
-\multicolumn{1}{|c|}{Average} & 0.84 & 0.87 & 0.90 & 0.84 & 0.84 & 0.89 & 0.84 & 0.87 & 0.88 & 0.86 & 0.87 & 0.91 & 0.86 & 0.87 & 0.90 & 0.85 & 0.85 & 0.91 \\ \hline
-\end{tabular}%
-}
-\end{table*}
-
-% Please add the following required packages to your document preamble:
-% \usepackage{graphicx}
-\begin{table*}[]
-\centering
-\caption{Mean of the IGD+ with three objectives}
-\label{my-label}
-\resizebox{\textwidth}{!}{%
-\begin{tabular}{c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|c|}
-\cline{2-19}
- & \multicolumn{3}{c|}{Case 1} & \multicolumn{3}{c|}{Case 2} & \multicolumn{3}{c|}{Case 3} & \multicolumn{3}{c|}{Case4} & \multicolumn{3}{c|}{Case 5} & \multicolumn{3}{c|}{DE} \\ \cline{2-19} 
- & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C & A & B & C \\ \hline
-\multicolumn{1}{|c|}{DTLZ1} & 0.014 & 0.020 & 0.014 & 0.014 & 0.022 & 0.013 & 0.014 & 0.020 & 0.014 & 0.014 & 0.020 & 0.014 & 0.014 & 0.020 & 0.013 & 0.014 & 0.018 & 0.014 \\ \hline
-\multicolumn{1}{|c|}{DTLZ2} & 0.028 & 0.032 & 0.019 & 0.028 & 0.033 & 0.019 & 0.028 & 0.032 & 0.019 & 0.028 & 0.032 & 0.019 & 0.028 & 0.033 & 0.019 & 0.028 & 0.028 & 0.019 \\ \hline
-\multicolumn{1}{|c|}{DTLZ3} & 0.028 & 0.031 & 0.019 & 0.028 & 0.041 & 0.019 & 0.028 & 0.031 & 0.019 & 0.028 & 0.031 & 0.019 & 0.028 & 0.031 & 0.019 & 0.028 & 0.056 & 1.065 \\ \hline
-\multicolumn{1}{|c|}{DTLZ4} & 0.140 & 0.030 & 0.156 & 0.201 & 0.032 & 0.166 & 0.108 & 0.046 & 0.129 & 0.032 & 0.030 & 0.100 & 0.060 & 0.030 & 0.090 & 0.028 & 0.028 & 0.019 \\ \hline
-\multicolumn{1}{|c|}{DTLZ5} & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 & 0.003 & 0.003 & 0.002 \\ \hline
-\multicolumn{1}{|c|}{DTLZ6} & 0.674 & 0.273 & 0.511 & 0.445 & 0.008 & 0.321 & 0.627 & 0.272 & 0.506 & 0.210 & 0.190 & 0.226 & 0.137 & 0.103 & 0.152 & 0.060 & 0.009 & 0.056 \\ \hline
-\multicolumn{1}{|c|}{DTLZ7} & 0.055 & 0.041 & 0.078 & 0.044 & 0.045 & 0.083 & 0.189 & 0.098 & 0.438 & 0.044 & 0.039 & 0.057 & 0.050 & 0.040 & 0.055 & 0.101 & 0.035 & 0.056 \\ \hline
-\multicolumn{1}{|c|}{UF10} & 0.421 & 0.295 & 0.284 & 0.323 & 0.319 & 0.308 & 0.377 & 0.278 & 0.297 & 0.366 & 0.262 & 0.251 & 0.382 & 0.321 & 0.358 & 0.312 & 0.333 & 0.189 \\ \hline
-\multicolumn{1}{|c|}{UF8} & 0.085 & 0.145 & 0.085 & 0.114 & 0.188 & 0.124 & 0.134 & 0.099 & 0.088 & 0.077 & 0.151 & 0.101 & 0.144 & 0.135 & 0.136 & 0.062 & 0.207 & 0.146 \\ \hline
-\multicolumn{1}{|c|}{UF9} & 0.148 & 0.193 & 0.105 & 0.133 & 0.142 & 0.104 & 0.129 & 0.139 & 0.094 & 0.129 & 0.197 & 0.095 & 0.149 & 0.192 & 0.137 & 0.127 & 0.315 & 0.076 \\ \hline
-\multicolumn{1}{|c|}{WFG1} & 0.124 & 0.148 & 0.127 & 0.307 & 0.987 & 0.134 & 0.118 & 0.146 & 0.120 & 0.090 & 0.136 & 0.046 & 0.101 & 0.148 & 0.048 & 0.465 & 0.100 & 0.159 \\ \hline
-\multicolumn{1}{|c|}{WFG2} & 0.093 & 0.140 & 0.065 & 0.097 & 0.138 & 0.064 & 0.089 & 0.141 & 0.061 & 0.085 & 0.158 & 0.036 & 0.067 & 0.147 & 0.031 & 0.059 & 0.092 & 0.030 \\ \hline
-\multicolumn{1}{|c|}{WFG3} & 0.025 & 0.048 & 0.012 & 0.025 & 0.052 & 0.012 & 0.025 & 0.046 & 0.012 & 0.024 & 0.055 & 0.012 & 0.024 & 0.047 & 0.012 & 0.024 & 0.074 & 0.012 \\ \hline
-\multicolumn{1}{|c|}{WFG4} & 0.123 & 0.122 & 0.069 & 0.125 & 0.129 & 0.070 & 0.123 & 0.124 & 0.070 & 0.123 & 0.119 & 0.069 & 0.123 & 0.122 & 0.069 & 0.132 & 0.178 & 0.070 \\ \hline
-\multicolumn{1}{|c|}{WFG5} & 0.184 & 0.167 & 0.128 & 0.184 & 0.169 & 0.128 & 0.184 & 0.167 & 0.128 & 0.184 & 0.165 & 0.128 & 0.184 & 0.168 & 0.128 & 0.185 & 0.164 & 0.129 \\ \hline
-\multicolumn{1}{|c|}{WFG6} & 0.175 & 0.174 & 0.117 & 0.174 & 0.177 & 0.118 & 0.176 & 0.170 & 0.115 & 0.173 & 0.167 & 0.112 & 0.162 & 0.143 & 0.097 & 0.206 & 0.175 & 0.100 \\ \hline
-\multicolumn{1}{|c|}{WFG7} & 0.126 & 0.117 & 0.069 & 0.124 & 0.118 & 0.069 & 0.126 & 0.117 & 0.070 & 0.126 & 0.116 & 0.069 & 0.125 & 0.116 & 0.069 & 0.127 & 0.157 & 0.070 \\ \hline
-\multicolumn{1}{|c|}{WFG8} & 0.195 & 0.238 & 0.149 & 0.197 & 0.246 & 0.149 & 0.181 & 0.249 & 0.144 & 0.195 & 0.233 & 0.149 & 0.137 & 0.234 & 0.142 & 0.190 & 0.284 & 0.146 \\ \hline
-\multicolumn{1}{|c|}{WFG9} & 0.172 & 0.219 & 0.116 & 0.156 & 0.190 & 0.097 & 0.165 & 0.223 & 0.087 & 0.161 & 0.214 & 0.110 & 0.137 & 0.232 & 0.082 & 0.231 & 0.234 & 0.192 \\ \hline
-\multicolumn{1}{|c|}{Average} & 0.15 & 0.13 & 0.11 & 0.14 & 0.16 & 0.11 & 0.15 & 0.13 & 0.13 & 0.11 & 0.12 & 0.09 & 0.11 & 0.12 & 0.09 & 0.13 & 0.13 & 0.13 \\ \hline
-\end{tabular}%
-}
-\end{table*}
-
-
-
-\begin{figure}[!t]
-\centering
-\includegraphics[scale=0.25,angle=-90]{img/bar_HV_2obj.eps}
-\caption{Average of normalized hypervolume considering all the instances and two objective.}
-\label{fig_sim}
-\end{figure}
-\begin{figure}[]
-\centering
-\includegraphics[scale=0.25,angle=-90]{img/bar_IGD_2obj.eps}
-\caption{Average of Inverted Genralized Distance Plus (IGD+) considering all the instances and two objective.}
-\label{fig_sim}
-\end{figure}
-
-\begin{figure}[!t]
-\centering
-\includegraphics[scale=0.25,angle=-90]{img/bar_HV_3obj.eps}
-\caption{Average of normalized hypervolume considering all the instances and three objective.}
-\label{fig_sim}
-\end{figure}
-\begin{figure}[]
-\centering
-\includegraphics[scale=0.25,angle=-90]{img/bar_IGD_3obj.eps}
-\caption{Average of Inverted Genralized Distance Plus (IGD+) considering all the instances and three objective.}
-\label{fig_sim}
-\end{figure}
+% \begin{figure}[!t]
+% \centering
+% \includegraphics[scale=0.25,angle=-90]{img/bar_HV_3obj.eps}
+% \caption{Average of normalized hypervolume considering all the instances and three objective.}
+% \label{fig_sim}
+% \end{figure}
+% \begin{figure}[]
+% \centering
+% \includegraphics[scale=0.25,angle=-90]{img/bar_IGD_3obj.eps}
+% \caption{Average of Inverted Genralized Distance Plus (IGD+) considering all the instances and three objective.}
+% \label{fig_sim}
+% \end{figure}

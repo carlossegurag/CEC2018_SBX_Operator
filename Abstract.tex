@@ -1,18 +1,16 @@
-The usual Muti-objective Evolutionary Algorithms (MOEAs) are designed to provide acceptable results in short-term executions.
+Most recombination operators are designed to provide an adaptive behavior with the principle of altering its exploration capabilities depending on the diversity of the population.
 %
-The principal reason is that most MOEAs converge to sub-optimal regions in a fast way, as result the search process could stagnate.
+However, depending only on the content of the population might be a drawback in long-term executions because diversity could not be large enough and the search process might prematurely converge.
 %
-Therefore, in long-term executions some Evolutionary Algorithms (EAs) are not capable to provide quality solutions.
+Based on the previous scenario, a novel recombination operator is designed for tackling continuous Multi-objective Optimization Problems (MOPs), which works effectively to enhance the search capability of Multi-Objective Evolutionary Algorithms (MOEAs).
 %
-Despite the fact that in literature has been showed that algorithms based in Differential Evolution (DE) perform significally better than Genetics Algorithms (GA) in short-term executions, 
-in long term executions is unkown their behavior.
+Particularly, this operator extends the Simulated Binary Crossover (SBX) by considering the stopping criterion to alter its internal operation.
 %
-It is well known the stability issues of parameter-configuration of DE and the accelerated convergence that in general results in poor quality solutions, therefore GA operators can be ideal with this setting.
+In order to validate the effectiveness of our proposal, it is studied by substituting the original recombination operators in  three state-of-the-art MOEAs: NSGA-II, MOEA/D and SMS-EMOA.
 %
+The popular DTLZ, WFG and UF benchmark problems are taken into account.
 %
-In this paper we propose several improvements to the Simulated Binary Crossover (SBX) where are considered the criteria stop as part of the search process.
+Experimental validation shows a significant improvement in the performance of all the MOEAs when applying the novel crossover operator.
 %
-Experimental validation with DTLZ, WFG and UFs problems shows the benefits of the proposal.
+Additionally, our proposal are also tested against state-of-the-art differential evolution operators, providing quite competitive results.
 %
-
-
