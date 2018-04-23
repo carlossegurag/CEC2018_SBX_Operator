@@ -9,22 +9,6 @@ Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: IEEEabrv.bib
 Database file #2: example.bib
-Repeated entry---line 1950 of file example.bib
- : @book{price2006differential
- :                            ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1970 of file example.bib
- : @incollection{eshelman1993real
- :                               ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 1995 of file example.bib
- : @article{ma2016multiobjective
- :                              ,
-I'm skipping whatever remains of this entry
-Repeated entry---line 2022 of file example.bib
- : @inproceedings{hamdan2012distribution
- :                                      ,
-I'm skipping whatever remains of this entry
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
@@ -35,43 +19,43 @@ Warning--empty booktitle in Joel:UNDX
 Done.
 You've used 35 entries,
             4024 wiz_defined-function locations,
-            1397 strings with 21707 characters,
-and the built_in function-call counts, 27037 in all, are:
-= -- 2159
+            1399 strings with 21742 characters,
+and the built_in function-call counts, 27055 in all, are:
+= -- 2171
 > -- 641
-< -- 243
+< -- 245
 + -- 350
 - -- 105
-* -- 1289
-:= -- 3982
-add.period$ -- 80
+* -- 1293
+:= -- 3997
+add.period$ -- 79
 call.type$ -- 35
 change.case$ -- 30
 chr.to.int$ -- 570
 cite$ -- 38
-duplicate$ -- 1908
-empty$ -- 2250
+duplicate$ -- 1909
+empty$ -- 2231
 format.name$ -- 136
-if$ -- 6280
+if$ -- 6277
 int.to.chr$ -- 0
 int.to.str$ -- 35
 missing$ -- 322
 newline$ -- 132
 num.names$ -- 37
-pop$ -- 754
+pop$ -- 746
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2099
+skip$ -- 2102
 stack$ -- 0
 substring$ -- 1355
-swap$ -- 1586
-text.length$ -- 53
+swap$ -- 1594
+text.length$ -- 55
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 35
 warning$ -- 3
 while$ -- 131
 width$ -- 37
-write$ -- 354
-(There were 4 error messages)
+write$ -- 356
+(There were 3 warnings)

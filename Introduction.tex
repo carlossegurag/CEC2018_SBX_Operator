@@ -1,4 +1,4 @@
-Evolutionary Algorithms (EA) have become a promising alternative in several practical problems where is not suitable a deterministic approach.
+Evolutionary Algorithms (EA) have become a promising alternative in several real-world problems where the deterministic approches are not suitable.
 %
 Multi-objective Optimization Problems (MOPs) involves the simultaneous optimization of two or more objective functions that are usually in conflict.
 %
@@ -13,40 +13,60 @@ A continuous minimization multi-objective problem can be defined as follows:
 where $x = (x_1, ..., x_n) \in R^n$ indicate a decision variable vector, $n$ correspond to the number of decision variables, $\Omega$ is the feasible space, $F: \Omega \rightarrow R^m$ which consist of $m$ objective functions and $R^m$ is known as the \textit{objective space}.
 %
 
-Particularly, a MOP which consists in minimization of the $m$ objective functions and given two decision variable vectors $x, y \in \Omega$, $x$ dominates $y$ denoted by $x \prec y$, iff $f_i(x)  \leq f_i(y)$ for all objectives $\{1,...,m\}$, and the objective vectors are different $F(x) \neq F(y)$.
+%Particularly, a MOP which consists in minimization of the $m$ objective functions and given two decision variable vectors $x, y \in \Omega$, $x$ dominates $y$ denoted by $x \prec y$, iff $f_i(x)  \leq f_i(y)$ for all objectives $\{1,...,m\}$, and the objective vectors are different $F(x) \neq F(y)$.
+%%
+%Accordingly this, the solution $x$ is not worse than $y$ in any of the objectives and $x$ is strictly better than $y$ in at least one objective.
+%%
+%The Pareto dominance is defined as the set of the best solutions that are not dominated by any feasible solution.
+%%
+%A decision variable vector $x^* \in \Omega$ is known as the Pareto optimal solution if does not exist any solution $x \in \Omega$ that dominates $x^*$.
+%%
+%The Pareto set correspond to the set of all Pareto optimal decision vectors and the Pareto front are the images of the Pareto set.
+%%
+%Principally, the goal in multi-objective optimization is to obtain an approximation of the Pareto front.
+%%
+%Therefore is required to obtain diverse and converged solutions among the Pareto front.
 %
-Accordingly this, the solution $x$ is not worse than $y$ in any of the objectives and $x$ is strictly better than $y$ in at least one objective.
+In a minimization MOP with $m$ objective functions, and given two solutions $x$, $y \in \Omega$, $x$ dominates $y$, denoted by  $x \prec y$, if $f_i(x) \leq f_i(y)$ for all objectives $\{1, ..., m \}$, and $F(x) \neq F(y)$. 
 %
-The Pareto dominance is defined as the set of the best solutions that are not dominated by any feasible solution.
+This means that the solution $x$ is not worse than $y$ in any of the objectives and $x$ is strictly better than $y$ in at least one objective.
 %
-A decision variable vector $x^* \in \Omega$ is known as the Pareto optimal solution if does not exist any solution $x \in \Omega$ that dominates $x^*$.
+The Pareto dominance definition states that the best solutions of a multi-objective optimization problem are those whose objective vectors are not dominated by any other feasible vector. 
 %
-The Pareto set correspond to the set of all Pareto optimal decision vectors and the Pareto front are the images of the Pareto set.
+A solution $x^* \in \Omega$ is known as Pareto optimal solution if no other solution $x \in \Omega$ dominates $x^*$. 
 %
-Principally, the goal in multi-objective optimization is to obtain an approximation of the Pareto front.
+The Pareto set is the set of all the Pareto optimal solutions and the Pareto front are the images of the Pareto set.
 %
-Therefore is required to obtain diverse and converged solutions among the Pareto front.
+The goal of multi-objective optimization approaches is to obtain a proper approximation of the Pareto front. 
+%
+Particularly, a set of solutions that are diverse and close to the Pareto front are desired. 
+
+
+In the last decade several categories of Multi-Objective Evolutionary Algorithms (MOEAs) have been arising \cite{Joel:Kalyanmoy,Joel:Coello}, among them, the Non-Dominated Sorting Genetic Algortihm II (NSGA-II) \cite{Joel:NSGAII}, the MOEA based on decomposition (MOEA/D) \cite{Joel:MOEAD}, the $S$-metric Selection Evolutionary Multi-objective Optimization Algorithm (SMS-EMOA) \cite{Joel:SMSEMOA}, these representative methods are considered as the state-of-the-art.
+
+Differential Evolution (DE) is a popular and efficient Evolutionary Algorithm (EA) which has yielded better results than Genetic Algorithms (GAs) \cite{tuvsar2007differential, mi2010improved}.
+%
+However, in the literature is well known that several componentes of DE induces an aggresive convergence leading to several drawbacks in different scenarios such as in long-term exetucions.
+%
+Usually, the aggressive behaviour of DE provokes that the algorithm stagnates in some sub-optimal regions at the first stages of the execution.
 %
 
-In the last decade several categories of Multi-Objective Evolutionary Algorithms (MOEAs) have been arising \cite{Joel:Kalyanmoy,Joel:Coello}, among them, the Non-Dominated Sorting Genetic Algortihm II (NSGA-II) \cite{Joel:NSGAII}, the MOEA based on decomposition (MOEA/D) \cite{Joel:MOEAD}, the $S$-metric Selection Evolutionary Multi-objective Optimization Algorithm (SMS-EMOA) \cite{Joel:SMSEMOA}, these representative methods are considered as ththat can bee state-of-the-art.
 
-
-Differential Evolution (DE) is a popular algorithm and has showed a better performance than Genetic Algorithms (GAs) \cite{tuvsar2007differential, mi2010improved}.
+To deal with these drawbacks, the most recent algorithms are designed with strategies where is considered the criteria stop, such as adaptive parameters \cite{brest2017single}, Linear Population Size Reduction (LPSR) \cite{brest2008population} and several mutation strategies \cite{das2011differential}.
 %
-However, it is well known that DE suffers of diversity issues, and presents a drawback in long-term executions.
+Principally, these adaptive strategies are oriented to deal with the substantial disadvantage of setting the control parameters.
 %
-This is because it has an aggressive convergence which can locate individuals in a sub-optimal region at the first stages of the execution, after that the rest of the function evaluations could be wasted.
+These are the crossover probability ($CR$) and the mutation factor scale ($F$).
 %
-To deal with this issues, the most recent algorithms are designed with strategies where is considered the criteria stop, such as adaptive parameters \cite{brest2017single}, Linear Population Size Reduction (LPSR) \cite{brest2008population} and several mutation strategies \cite{das2011differential}.
 %
-Also these adaptive strategies are oriented to deal with a substantial disadvantage, this is that are influenced by the crossover probability (CR) value and the mutation factor scale (F), therefore the quality of the solutions is highly affected by different configurations.
-%
-Also is evident the implications between single-objective and multi-objective problems which are related with the decision variable space diversity \cite{kukkonen2007performance}.
+Also, is important to take into account the implications between single-objective and multi-objective problems which are related with the decision variable space diversity \cite{kukkonen2007performance}.
 
 %
-On the other hand GAs imply a less aggressive and flexible behavior, this can be a reason that DE performs to GAs in short-term executions both in continuous and discrete domains  \cite{tuvsar2007differential, mi2010improved}.
+On the other hand, GAs imply a less aggressive and flexible behavior provoking lowest quality solutions than DE in short-term executions both in continuous and discrete domains  \cite{tuvsar2007differential, mi2010improved}.
 %
-However, considering a long-term executions GAs have interesting properties, one of them is related with the probability density distribution that provides the flexibility of the operators that are involved, as the selection, crossover and  mutation operators.
+Nevertheless, the GAs have interesting behaviours when are considered in long-term executions.
+%
+Principally, because several componentes are based in a probability density distribution which provides an extensive search process.
 %
 
 In this paper, a novel recombination operator, is designed for tackling continuous multi-objective optimization problems (MOPs), which works effectively to enhance the search capability, guiding to a gradual change between exploration to intensification.
@@ -56,12 +76,12 @@ Therefore, several components of the Simulated Binary Crossover (SBX) are analyz
 
 The rest of this paper is organized as follows.
 %
-In Section \ref{LiteratureReview} is provided a detailed review of the literature related with the SBX operator, and a brief description of the state-of-the-art of MOEAs.
+In Section \ref{LiteratureReview} is revised the literature related with the SBX operator, and a brief description of the state-of-the-art of MOEAs.
 %
-Section \ref{Proposal} describes the key components of the SBX, and a dynamic behavior is imposed in each of these components, where an experimental analyzes is showed.
+In the section \ref{Proposal} is realized an empirical analyzes to each component of this operator.
 %
-Therefore, our proposal is designed based in the effectively of each key component.
+Thereafter, our proposal is designed based in this analyzes.
 %
-The experimental validation of the proposal and DE is showed in Section \ref{Experimental_Validation}.
+The experimental validation of the proposal and some DE variants are showed in Section \ref{Experimental_Validation}.
 %
 Finally, conclusions and some lines of future work are given in Section \ref{Conclusions}.

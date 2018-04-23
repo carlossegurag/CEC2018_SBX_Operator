@@ -91,11 +91,11 @@ M.~Pil{\'a}t, ``Evolutionary multiobjective optimization: A short survey of the
   state-of-the-art,'' \emph{Proceedings of the Contributed Papers Part
   I-Mathematics and Computer Sciences, WDS, Prague, Czech}, pp. 1--4, 2010.
 
-\bibitem{horoba2008benefits}
-C.~Horoba and F.~Neumann, ``Benefits and drawbacks for the use of
-  epsilon-dominance in evolutionary multi-objective optimization,'' in
-  \emph{Proceedings of the 10th annual conference on Genetic and evolutionary
-  computation}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2008, pp. 641--648.
+\bibitem{Joel:NSGAIII}
+K.~Deb and H.~Jain, ``An evolutionary many-objective optimization algorithm
+  using reference-point-based nondominated sorting approach, part i: Solving
+  problems with box constraints,'' \emph{IEEE Transactions on Evolutionary
+  Computation}, vol.~18, no.~4, pp. 577--601, 2014.
 
 \bibitem{price2006differential}
 K.~Price, R.~M. Storn, and J.~A. Lampinen, \emph{Differential evolution: a

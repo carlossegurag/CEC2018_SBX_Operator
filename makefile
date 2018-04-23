@@ -3,7 +3,7 @@ all:
 	bibtex main.aux
 	pdflatex main.tex
 	pdflatex main.tex
-	mv main.pdf main.pdf
+#	mv main.pdf main.pdf
 #	latex boockchapter.tex
 #	bibtex boockchapter
 #	latex boockchapter.tex

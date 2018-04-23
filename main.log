@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  22 APR 2018 22:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  23 APR 2018 11:15
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -119,6 +119,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/it' in size <24> not available
 LaTeX Info: Redefining \cite on input line 302.
 LaTeX Info: Redefining \nocite on input line 373.
 Package: cite 2010/09/10  v 5.3
+)
+(/usr/share/texlive/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language79
+LaTeX Info: Redefining \_ on input line 43.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/base/inputenc.sty
 Package: inputenc 2008/03/30 v1.1d Input encoding file
@@ -350,28 +355,28 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen137
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
-LaTeX Font Info:    ... okay on input line 76.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
+LaTeX Font Info:    ... okay on input line 77.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
+LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
-LaTeX Font Info:    ... okay on input line 76.
+LaTeX Font Info:    ... okay on input line 77.
 
 -- Lines per column: 56 (exact).
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/ucsencs.def
@@ -438,9 +443,30 @@ G,.JBIG2,.JB2,.eps]
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
 e
 ))
-(./Abstract.tex) (./Introduction.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
+(./Abstract.tex)
+Underfull \hbox (badness 1502) in paragraph at lines 87--89
+[]\OT1/ptm/b/it/9 Abstract\OT1/ptm/b/n/9 ---Most re-com-bi-na-tion op-er-a-tors
+ are de-signed to
+ []
 
+
+Underfull \hbox (badness 1776) in paragraph at lines 87--89
+\OT1/ptm/b/n/9 is also tested against state-of-the-art dif-fer-en-tial evo-lu-t
+ion
+ []
+
+(./Introduction.tex
+Underfull \hbox (badness 7558) in paragraph at lines 1--7
+\OT1/ptm/m/n/10 al-ter-na-tive in sev-eral real-world prob-lems where the
+ []
+
+
+Underfull \hbox (badness 2293) in paragraph at lines 1--7
+\OT1/ptm/m/n/10 de-ter-min-is-tic ap-proches are not suit-able. Multi-objective
+
+ []
+
+LaTeX Font Info:    Try loading font information for U+msa on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -449,455 +475,284 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-
-LaTeX Warning: Citation `Joel:Kalyanmoy' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Joel:Coello' on page 1 undefined on input line 31.
+Underfull \hbox (badness 2213) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 II (NSGA-II) [3], the MOEA based on de-com-po-si-tion
+ []
 
 
-LaTeX Warning: Citation `Joel:NSGAII' on page 1 undefined on input line 31.
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 (MOEA/D) [4], the $\OML/cmm/m/it/10 S$\OT1/ptm/m/n/10 -metric S
+e-lec-tion Evo-lu-tion-ary
+ []
 
 
-LaTeX Warning: Citation `Joel:MOEAD' on page 1 undefined on input line 31.
+Underfull \hbox (badness 10000) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 Multi-objective Op-ti-miza-tion Al-go-rithm (SMS-EMOA)
+ []
 
 
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 1 undefined on input line 31.
+Underfull \hbox (badness 1721) in paragraph at lines 45--46
+\OT1/ptm/m/n/10 [5], these rep-re-sen-ta-tive meth-ods are con-sid-ered as the
+ []
 
 
-LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
-ine 34.
-
-
-LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 34.
-
-
-LaTeX Warning: Citation `brest2017single' on page 1 undefined on input line 40.
-
-
-
-LaTeX Warning: Citation `brest2008population' on page 1 undefined on input line
- 40.
-
-
-LaTeX Warning: Citation `das2011differential' on page 1 undefined on input line
- 40.
-
-
-LaTeX Warning: Citation `kukkonen2007performance' on page 1 undefined on input 
-line 44.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
-ine 47.
-
-
-LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 47.
+Underfull \hbox (badness 2221) in paragraph at lines 72--76
+\OT1/ptm/m/n/10 to in-ten-si-fi-ca-tion. There-fore, sev-eral com-po-nents of t
+he
+ []
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-
-LaTeX Warning: Reference `LiteratureReview' on page 2 undefined on input line 5
-9.
-
-
-LaTeX Warning: Reference `Proposal' on page 2 undefined on input line 61.
+]) (./LiteratureReview.tex
+Underfull \hbox (badness 10000) in paragraph at lines 12--25
+\OT1/ptm/m/n/10 Multi-objective Op-ti-miza-tion Al-go-rithm (SMS-EMOA)
+ []
 
 
-LaTeX Warning: Reference `Experimental_Validation' on page 2 undefined on input
- line 65.
+Underfull \hbox (badness 2828) in paragraph at lines 12--25
+\OT1/ptm/m/n/10 [5]. There-fore, they are rep-re-sen-ta-tive meth-ods of the
+ []
 
 
-LaTeX Warning: Reference `Conclusions' on page 2 undefined on input line 67.
-
-) (./LiteratureReview.tex
-
-LaTeX Warning: Citation `Joel:BOOK_MOEAs' on page 2 undefined on input line 13.
+Underfull \hbox (badness 1742) in paragraph at lines 28--38
+\OT1/ptm/m/n/10 such as nich-ing crowd-ing and/or clus-ter-ing are usu-ally
+ []
 
 
-
-LaTeX Warning: Citation `pilat2010evolutionary' on page 2 undefined on input li
-ne 15.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `horoba2008benefits' on page 2 undefined on input line 
-42.
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 47.
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 47--55
+Underfull \hbox (badness 10000) in paragraph at lines 55--63
  \OT1/ptm/m/it/10 2) De-com-po-si-tion Based MOEAs - MOEA/D: [][]
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 47--55
-\OT1/ptm/m/n/10 Decomposition-based MOEAs [\OT1/ptm/b/n/10 ?\OT1/ptm/m/n/10 ] t
-rans-form a MOP in
+Underfull \hbox (badness 2418) in paragraph at lines 55--63
+\OT1/ptm/m/n/10 Decomposition-based MOEAs [4] trans-form a MOP in
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 47--55
+Underfull \hbox (badness 1371) in paragraph at lines 55--63
 \OT1/ptm/m/n/10 a set of single-objective op-ti-miza-tion prob-lems that are
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 47--55
+Underfull \hbox (badness 5637) in paragraph at lines 55--63
 \OT1/ptm/m/n/10 con-sid-ered si-mul-ta-ne-ously. This trans-for-ma-tion can be
  []
 
 
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 56.
-
-
-LaTeX Warning: Citation `price2006differential' on page 2 undefined on input li
-ne 62.
-
-
-LaTeX Warning: Citation `hamdan2012distribution' on page 2 undefined on input l
-ine 62.
-
-
-LaTeX Warning: Citation `zhang2009performance' on page 2 undefined on input lin
-e 62.
+Underfull \hbox (badness 10000) in paragraph at lines 64--73
+\OT1/ptm/m/n/10 through the use of neigh-bor-hoods. Par-tic-u-larly, the
+ []
 
 <img/SBX_eta_20_2D.png, id=16, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D.png Graphic file (type png)
  <use img/SBX_eta_20_2D.png>
-Package pdftex.def Info: img/SBX_eta_20_2D.png used on input line 71.
+Package pdftex.def Info: img/SBX_eta_20_2D.png used on input line 79.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
 <img/SBX_eta_20_3D.png, id=17, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_3D.png Graphic file (type png)
  <use img/SBX_eta_20_3D.png>
-Package pdftex.def Info: img/SBX_eta_20_3D.png used on input line 72.
+Package pdftex.def Info: img/SBX_eta_20_3D.png used on input line 80.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
-Overfull \hbox (21.50006pt too wide) in paragraph at lines 70--74
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 78--82
  [][] 
  []
 
 
-LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 2 undefined on input 
-line 83.
-
-
-Underfull \hbox (badness 1983) in paragraph at lines 77--87
+Underfull \hbox (badness 10000) in paragraph at lines 85--95
  \OT1/ptm/m/it/10 3) In-di-ca-tor Based MOEAs - SMS-EMOA: [][] \OT1/ptm/m/n/10 
-In multi-
+In
  []
 
 
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 88.
+Underfull \hbox (badness 10000) in paragraph at lines 85--95
+\OT1/ptm/m/n/10 multi-objective op-ti-miza-tion sev-eral qual-ity in-di-ca-tors
+
+ []
+
+
+Underfull \hbox (badness 4060) in paragraph at lines 85--95
+\OT1/ptm/m/n/10 have been de-vel-oped to com-pare the per-for-mance of
+ []
+
+
+Underfull \hbox (badness 1635) in paragraph at lines 85--95
+\OT1/ptm/m/n/10 the MOEAs to guide the op-ti-miza-tion pro-cess. Among
+ []
+
+
+Underfull \hbox (badness 4193) in paragraph at lines 85--95
+\OT1/ptm/m/n/10 Pareto-compliance qual-ity in-di-ca-tor [18]. The prin-ci-pal
+ []
 
 <img/DensitySBX_English.png, id=18, 1290.8225pt x 920.43875pt>
 File: img/DensitySBX_English.png Graphic file (type png)
 
 <use img/DensitySBX_English.png>
-Package pdftex.def Info: img/DensitySBX_English.png used on input line 103.
+Package pdftex.def Info: img/DensitySBX_English.png used on input line 111.
 (pdftex.def)             Requested size: 180.67499pt x 128.83246pt.
  [2 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png>]
-
-LaTeX Warning: Citation `eshelman1993real' on page 3 undefined on input line 12
-3.
-
-
-LaTeX Warning: Citation `Joel:SBX1994' on page 3 undefined on input line 123.
+Underfull \hbox (badness 1748) in paragraph at lines 125--144
+\OT1/ptm/m/n/10 op-er-a-tors, chil-dren so-lu-tions are cre-ated around one of
+ []
 
 
-LaTeX Warning: Citation `Joel:UNDX' on page 3 undefined on input line 129.
+Underfull \hbox (badness 10000) in paragraph at lines 147--152
+ \OT1/ptm/m/it/10 1) The Sim-u-lated Bi-nary Crossover - SBX: [][] \OT1/ptm/m/n
+/10 The
+ []
 
 
-LaTeX Warning: Citation `Joel:DE_Storn_SPX' on page 3 undefined on input line 1
-29.
+Underfull \hbox (badness 5862) in paragraph at lines 147--152
+\OT1/ptm/m/n/10 re-pro-duc-tion op-er-a-tors are one of the most rel-e-vant
+ []
 
 
-LaTeX Warning: Citation `jain2011parent' on page 3 undefined on input line 131.
+Underfull \hbox (badness 5203) in paragraph at lines 147--152
+\OT1/ptm/m/n/10 com-po-nents that in-flu-ence the search pro-cess of the
+ []
 
 
-
-LaTeX Warning: Citation `deb1994simulated' on page 3 undefined on input line 14
-5.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 3 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 3 undefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:fig_sim' on page 3 undefined on input line 154.
+Underfull \hbox (badness 10000) in paragraph at lines 153--159
+[]\OT1/ptm/m/n/10 The Sim-u-lated Bi-nary Crossover (SBX) [24] is
+ []
 
 <img/SBX_eta_20_2D_pv_1.png, id=28, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D_pv_1.png Graphic file (type png)
 
 <use img/SBX_eta_20_2D_pv_1.png>
-Package pdftex.def Info: img/SBX_eta_20_2D_pv_1.png used on input line 179.
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_1.png used on input line 187.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
 <img/SBX_eta_20_2D_pv_01.png, id=29, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D_pv_01.png Graphic file (type png)
 
 <use img/SBX_eta_20_2D_pv_01.png>
-Package pdftex.def Info: img/SBX_eta_20_2D_pv_01.png used on input line 180.
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_01.png used on input line 188.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
-Overfull \hbox (21.50006pt too wide) in paragraph at lines 178--182
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 186--190
  [][] 
  []
 
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
-82.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
-82.
-
 [3 <./img/DensitySBX_English.png> <./img/SBX_eta_20_2D_pv_1.png> <./img/SBX_eta
 _20_2D_pv_01.png>]
-
-LaTeX Warning: Citation `deb1999self' on page 4 undefined on input line 211.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 211.
-
+Underfull \hbox (badness 3635) in paragraph at lines 289--297
+\OT1/ptm/m/n/10 crossover prob-a-bil-ity'' [6] or ``Dis-crete Re-com-bi-na-tion
+''
+ []
 
 
-LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 226.
-
-
-LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 232.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 244.
-
-
-
-LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 244.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 245.
-
-
-
-LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 245.
-
-
-LaTeX Warning: Citation `Joel:SBX1994' on page 4 undefined on input line 260.
-
-
-LaTeX Warning: Citation `Joel:UNDX' on page 4 undefined on input line 260.
-
-
-LaTeX Warning: Citation `price2006differential' on page 4 undefined on input li
-ne 275.
-
-
-LaTeX Warning: Reference `fig:Simulation_pv' on page 4 undefined on input line 
-275.
-
-
-LaTeX Warning: Citation `ma2016multiobjective' on page 4 undefined on input lin
-e 279.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 4 undefined on input l
-ine 282.
-
-
-LaTeX Warning: Citation `muhlenbein1993predictive' on page 4 undefined on input
- line 282.
-
-
-LaTeX Warning: Reference `fig:Simulations_Index_20' on page 4 undefined on inpu
-t line 288.
-
-
-LaTeX Warning: Citation `voigt1995fuzzy' on page 4 undefined on input line 291.
-
-
-
-LaTeX Warning: Reference `fig:Simulation_Case_3' on page 4 undefined on input l
-ine 291.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 4 undefined on input line 2
-95.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 4 undefined on input line 295.
+Underfull \hbox (badness 2409) in paragraph at lines 289--297
+\OT1/ptm/m/n/10 has se-rial im-pli-ca-tions, since that in-ter-change vari-able
+s
+ []
 
 <img/SBX_eta_2.png, id=38, 481.8pt x 361.35pt>
 File: img/SBX_eta_2.png Graphic file (type png)
  <use img/SBX_eta_2.png>
-Package pdftex.def Info: img/SBX_eta_2.png used on input line 309.
+Package pdftex.def Info: img/SBX_eta_2.png used on input line 316.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
 
 <img/SBX_eta_20.png, id=39, 481.8pt x 361.35pt>
 File: img/SBX_eta_20.png Graphic file (type png)
  <use img/SBX_eta_20.png>
-Package pdftex.def Info: img/SBX_eta_20.png used on input line 310.
+Package pdftex.def Info: img/SBX_eta_20.png used on input line 317.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
 
-Overfull \hbox (11.18573pt too wide) in paragraph at lines 308--312
+Overfull \hbox (11.18573pt too wide) in paragraph at lines 315--319
  [][] 
  []
 
 ) (./Proposal.tex
+Underfull \vbox (badness 3701) has occurred while \output is active []
 
-LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 6.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 8.
-
-[4 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]
-
-LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 16.
-
-
-LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
-t line 18.
-
-
-LaTeX Warning: Citation `hamdan2012distribution' on page 5 undefined on input l
-ine 20.
-
-
-LaTeX Warning: Reference `Experimental_Validation' on page 5 undefined on input
- line 31.
-
-
-LaTeX Warning: Citation `Joel:jMetal' on page 5 undefined on input line 33.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 5 undefined on input line 3
-9.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 43.
-
-
-LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 44.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 48.
-
-
-LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
-t line 48.
-
-
-LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 5 undefined on input 
-line 48.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
-ine 50.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 60.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 60.
-
-[5]
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 6 undefined on input line 7
-1.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 6 undefined on input line 73.
-
-
-LaTeX Warning: Reference `eqn:index_eta' on page 6 undefined on input line 73.
-
-) (./ExperimentalValidation.tex
-
-LaTeX Warning: Citation `Joel:WFG' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation `zhang2009performance' on page 6 undefined on input lin
-e 3.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 6 undefined on input l
-ine 5.
-
-
-LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 11.
-
-
-LaTeX Warning: Reference `tab:ReferencePoints' on page 6 undefined on input lin
-e 26.
-
-
-LaTeX Warning: Citation `Joel:Kuhn_Munkres' on page 6 undefined on input line 2
-6.
-
-
-LaTeX Warning: Citation `Joel:OperatorAHX' on page 6 undefined on input line 26
-.
-
-
-LaTeX Warning: Citation `Joel:StatisticalTest' on page 6 undefined on input lin
-e 29.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
-ine 42.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 61.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 6 undefined on input line 61.
-
+ [4]
+[5 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]) (./ExperimentalValidation.tex
 
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][][]\OT1/ptm/m/n/8 The de-tailed re-sults can be con-sulted in the web page
  []
 
+[6]
+Underfull \hbox (badness 1655) in paragraph at lines 75--119
+\OT1/ptm/m/n/10 Dif-fer-ence'' is low both with two ob-jec-tives and three
+ []
 
-LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 67.
+)
+Underfull \hbox (badness 2189) in paragraph at lines 205--239
+\OT1/ptm/m/n/10 pa-ram-e-ter-i-za-tions were re-quired to de-vise the pro-posed
 
-[6])
-Underfull \vbox (badness 10000) has occurred while \output is active []
+ []
+
+
+Underfull \vbox (badness 4229) has occurred while \output is active []
 
  [7]
-No file main.bbl.
+(./main.bbl
+Underfull \hbox (badness 2150) in paragraph at lines 25--28
+[]\OT1/ptm/m/n/8 K. Deb and D. Kalyan-moy, \OT1/ptm/m/it/8 Multi-Objective Op-t
+i-miza-tion Us-ing
+ []
+
+
+Underfull \hbox (badness 3514) in paragraph at lines 30--34
+[]\OT1/ptm/m/n/8 C. A. C. Coello, G. B. La-m-ont, and D. A. V. Veld-huizen,
+ []
+
+
+Underfull \hbox (badness 1389) in paragraph at lines 41--44
+[]\OT1/ptm/m/n/8 Q. Zhang and H. Li, ``MOEA/D: A Mul-ti-ob-jec-tive Evo-lu-tion
+-ary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 41--44
+\OT1/ptm/m/n/8 Al-go-rithm Based on De-com-po-si-tion,'' \OT1/ptm/m/it/8 IEEE T
+rans-ac-tions on
+ []
+
+
+Underfull \hbox (badness 3482) in paragraph at lines 51--55
+[]\OT1/ptm/m/n/8 T. Tu[]sar and B. Fil-ipi[]c, ``Dif-fer-en-tial evo-lu-tion ve
+r-sus ge-netic
+ []
+
+
+Underfull \hbox (badness 1783) in paragraph at lines 57--61
+\OT1/ptm/m/n/8 evo-lu-tion al-go-rithm for tsp prob-lem,'' in \OT1/ptm/m/it/8 I
+n-tel-li-gent Com-pu-ta-tion
+ []
+
+
+Underfull \hbox (badness 4242) in paragraph at lines 63--67
+[]\OT1/ptm/m/n/8 J. Brest, M. S. Mau[]cec, and B. Bo[]skovi[]c, ``Sin-gle ob-je
+c-tive
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 63--67
+\OT1/ptm/m/n/8 real-parameter op-ti-miza-tion: Al-go-rithm jso,'' in \OT1/ptm/m
+/it/8 Evo-lu-tion-ary
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 106--110
+\OT1/ptm/m/n/8 study,'' in \OT1/ptm/m/it/8 In-ter-na-tional Con-fer-ence on Ele
+c-tron-ics Com-puter
+ []
+
+
+Underfull \hbox (badness 1648) in paragraph at lines 191--195
+[]\OT1/ptm/m/n/8 S. Huband, L. Barone, L. While, and P. Hingston, \OT1/ptm/m/it
+/8 A Scal-able
+ []
+
+(/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+) [8])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -909,44 +764,38 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8
+[9
 
-] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4417 strings out of 493304
- 66931 string characters out of 6139871
- 170870 words of memory out of 5000000
- 7766 multiletter control sequences out of 15000+600000
- 46621 words of font info for 91 fonts, out of 8000000 for 9000
+ 4717 strings out of 493304
+ 70484 string characters out of 6139871
+ 170933 words of memory out of 5000000
+ 8054 multiletter control sequences out of 15000+600000
+ 47757 words of font info for 92 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,15n,26p,682b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 328020 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
+ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
+ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
+sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
+fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
+onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
+/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on main.pdf (9 pages, 336463 bytes).
 PDF statistics:
- 113 PDF objects out of 1000 (max. 8388607)
- 72 compressed objects within 1 object stream
+ 116 PDF objects out of 1000 (max. 8388607)
+ 74 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,0 +1,178 @@
+REVIEW NO. 1
+
+Comments to the authors:
+    Analysis and Enhancement of the Simulated Binary Crossover*
+
+    The paper presents a new extesion to Simulated Binary Crossover (SBX) 
+    considering the stopping criterion to alter its internal operation.
+
+    The subject is interesting and the obtained results show a satisfactory 
+    perspective, but several language errors were found. Such as:
+
+    * Whole paper:
+        * Syllable division problem;
+        * Change:
+#            * "table X" by "Table X";
+#            * "equation X" by "Equation X";
+#            * "figure X" by "Figure X";
+#            * "algorithm X" by "Algorithm X";    
+
+    * The paper is not so easy to read - reorganize the Tables, Figures, Results 
+    and so on. For example: The citation of Table III appears before the citation 
+    of Table I.
+
+    * Abstract - "Experimental validation shows a significant improvement in the 
+    performance of all the MOEAs when applying". How much better?
+
+    * Change:
+#        * "Implementation and analyses of the SBX operator:" by "Implementation and 
+    analyses of SBX operator:";
+#        * "this section is discussed the principal characteristics of the SBX 
+#    operator. Essentially, the behavior of the operator is" by "this section 
+#    discusses the principal characteristics of SBX operator. Essentially, the 
+#    behavior of operator is";
+#        * "best results than the Case 1, Case 2 and Case 3," by "best results than 
+#    Case 1, Case 2 and Case 3,".
+
+    * Redo the phrase:
+        * "due that it provides a rotationally";
+        * "is suitable for due that few decisions".
+
+    * "35 independent executions". Explain about used random seeds.
+
+#    * "In order to analyze the performance of each Case (Case 5 is ignored)". Why?
+
+----------------------------------------------
+REVIEW NO. 2
+
+Comments to the authors:
+    * Some comments on practical applications and non-stationary objective functions
+    are desirable.
+    * There are quite number of awkward expressions (and also misspellings) in this
+    manuscript, and it is not at the international conference quality.  So, this
+    reviewer *strongly* recommends to the authors that this manuscript should be
+    proofread by a native speaker of English.
+
+----------------------------------------------
+REVIEW NO. 3
+
+Comments to the authors:
+    This paper presents an analysis of the performance of the Simulated Binary Crossover (SBX) 
+    recombination operator in response to annealing the effect of the SBX operator. Three 
+    methods for annealing over generations are tested: 1) increasing the probability that a value is 
+    copied unchanged from its parent, 2) decreasing the probability that values are exchanged 
+    between parents, and 3) by increasing the distribution index parameter (which effectively 
+    decreases the noise introduced during crossover). All methods effectively change the 
+    operator from exploration to exploitation over generations by inducing smaller and fewer 
+    changes to the individuals. Based on this analysis, a novel recombination operator is 
+    suggested that combines decreasing the probability of exchanging values between parents 
+    with increasing the distribution index parameter. Results show that the new recombination 
+    operator outperforms regular SBX in three different multi-objective algorithms (NSGA-II, 
+    MOEA/D, and SMS-EMOA) on the DTLZ, WFG, and UF benchmarks.
+
+    The idea of annealing the mutation or recombination operators is not new [1], and dynamically 
+    changing the effect of SBX has been examined in terms of self-adaptation [2], but I am not 
+    familiar with any work annealing the SBX operator at a steady rate, or specifically focussing on 
+    its effect in a multi-objective domain. As such, examining the effect of linearly annealing the 
+    impact of the SBX recombination operator in a multi-objective domain is the main contribution 
+    of this paper.
+
+    Unfortunately, the paper is difficult to read an understand because it contains many grammar 
+    errors and unclear writing (see "Grammar comments" below for examples from the first page 
+    of the paper). As a result, I am unable to properly evaluate the contribution of the paper and I 
+    can provide only a few comments with respect to the actual content of the paper (see "Other 
+    comments" below).  I would suggest rewriting the paper with the help of a native English 
+    speaker. Sadly, I have to recommend to reject this paper, not because of its scientific content 
+    (which I can not evaluate), but because of its writing.  
+
+
+    Other comments:
+
+##    "The Pareto dominance is defined as the set of the best solutions that are not dominated by 
+    any feasible solution."
+#    - I have seen the set of "solutions that are not dominated by any feasible solution" referred to 
+#    as the Pareto front, the Pareto frontier, or the Pareto set, but never as the Pareto dominance. 
+#    Pareto dominance generally refers to the dominance relationship itself, not the set of solutions 
+#    that may be defined by such a relationship.
+
+ #   "A current version is the NSGA-III which is designed to deal with many-objective problems 
+ #   [14]."
+ #   - Reference 14 does not refer to NSGA-III. Based on the references provided, I can not verify 
+ #   whether NSGA-III is indeed effective at dealing with many-objective problems.
+
+    - With respect to the explanation of Pareto dominance and the Pareto front, the term Pareto 
+    front is often used to define the set of non-dominated solutions within a set of solutions (and I 
+    do not believe this is incorrect; if the set of solutions is considered the system, the set of non-
+    dominated solutions form the Pareto front within that system). As such, following Deb. et al 
+    [3], I would recommend referring to the Pareto front of the entire optimization problem as the 
+    true Pareto front or true Pareto-optimal front instead. 
+
+#    - Equation 4 seems to contain an error where n is written while it should have been nc.
+
+#    "A very used variant of the MOEA/D is the MOEA/D-DE, which use the DE operators [15] and 
+#    the polynomial mutation operator [16] in the reproduction phase, also it has two extra 
+#    measures for maintaining the population diversity [17]. However, these two extra mechanisms 
+#    are not enough to deal with long-term executions."
+#    - There is no reference added to the final sentence. Is there any literature demonstrating that 
+#    these two mechanisms are indeed insufficient when the algorithm is run for many 
+#    generations?
+
+    - Tables I, II, and II are mentioned in section III, but how to read them is not explained until 
+    section IV.
+
+    "Crossover is one of the most important operators in EAs."
+    - Debatable. There exist many EAs that solely rely on mutation operators instead. 
+
+
+    Grammar comments:
+
+#    "our proposal are"
+#    - Should be: "our proposal is".
+
+#    "where is not suitable a deterministic approach."
+#    - A better ordering would be: "where a deterministic approach is not suitable."
+
+#    "indicate a decision variable"
+#    - Should be: "indicates a decision variable"
+
+#    "n correspond to"
+#    - Should be: "n corresponds to"
+
+#    "Particularly, a MOP which consists in minimization of"
+#    - It should be "consists of" rather than "consists in", though I don't think "consists" is actually 
+#    the right term to use in this context.
+
+#    "Accordingly this"
+#    - Should just be: "Accordingly"
+
+#    "if does not exist any"
+#    - Should be: "if there does not exist any"
+
+#    "The Pareto set correspond"
+#    - Should be: "The Pareto set corresponds"
+
+#    "Therefore is required to obtain diverse and converged solutions among the Pareto front."
+#    - "Therefore is" should be: "Therefore it is" and "required" should probably be replaced with 
+#    "necessary".
+
+#    "these representative methods are considered as ththat can bee state-of-the-art."
+#    - "ththat can bee" should be removed.
+
+#    "and has showed a better performance"
+#    - Should be: "and has shown a better performance"
+
+#    "To deal with this issues"
+#    - Should be: "To deal with these issues"
+
+
+    References:
+
+    [1] Lin, Wen-Yang, Wen-Yung Lee, and Tzung-Pei Hong. "Adapting crossover and mutation 
+    rates in genetic algorithms." J. Inf. Sci. Eng. 19.5 (2003): 889-903.
+
+    [2] Deb, Kalyanmoy, and Hans-Georg Beyer. "Self-adaptation in real-parameter genetic 
+    algorithms with simulated binary crossover." Proceedings of the 1st Annual Conference on 
+    Genetic and Evolutionary Computation-Volume 1. Morgan Kaufmann Publishers Inc., 1999.
+
+    [3] Deb, Kalyanmoy, et al. "A fast and elitist multiobjective genetic algorithm: NSGA-II." IEEE 
+    transactions on evolutionary computation 6.2 (2002): 182-197.
