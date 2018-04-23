@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  23 APR 2018 11:15
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2018.4.16)  23 APR 2018 17:33
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -272,87 +272,6 @@ Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
 \Gin@req@height=\dimen135
 \Gin@req@width=\dimen136
 )
-(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
-Package: textcomp 2005/09/27 v1.99g Standard LaTeX package
-Package textcomp Info: Sub-encoding information:
-(textcomp)               5 = only ISO-Adobe without \textcurrency
-(textcomp)               4 = 5 + \texteuro
-(textcomp)               3 = 4 + \textohm
-(textcomp)               2 = 3 + \textestimated + \textcurrency
-(textcomp)               1 = TS1 - \textcircled - \t
-(textcomp)               0 = TS1 (full)
-(textcomp)             Font families with sub-encoding setting implement
-(textcomp)             only a restricted character set as indicated.
-(textcomp)             Family '?' is the default used for unknown fonts.
-(textcomp)             See the documentation for details.
-Package textcomp Info: Setting ? sub-encoding to TS1/1 on input line 71.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1enc.def
-File: ts1enc.def 2001/06/05 v3.0e (jk/car/fm) Standard LaTeX file
-)
-LaTeX Info: Redefining \oldstylenums on input line 266.
-Package textcomp Info: Setting cmr sub-encoding to TS1/0 on input line 281.
-Package textcomp Info: Setting cmss sub-encoding to TS1/0 on input line 282.
-Package textcomp Info: Setting cmtt sub-encoding to TS1/0 on input line 283.
-Package textcomp Info: Setting cmvtt sub-encoding to TS1/0 on input line 284.
-Package textcomp Info: Setting cmbr sub-encoding to TS1/0 on input line 285.
-Package textcomp Info: Setting cmtl sub-encoding to TS1/0 on input line 286.
-Package textcomp Info: Setting ccr sub-encoding to TS1/0 on input line 287.
-Package textcomp Info: Setting ptm sub-encoding to TS1/4 on input line 288.
-Package textcomp Info: Setting pcr sub-encoding to TS1/4 on input line 289.
-Package textcomp Info: Setting phv sub-encoding to TS1/4 on input line 290.
-Package textcomp Info: Setting ppl sub-encoding to TS1/3 on input line 291.
-Package textcomp Info: Setting pag sub-encoding to TS1/4 on input line 292.
-Package textcomp Info: Setting pbk sub-encoding to TS1/4 on input line 293.
-Package textcomp Info: Setting pnc sub-encoding to TS1/4 on input line 294.
-Package textcomp Info: Setting pzc sub-encoding to TS1/4 on input line 295.
-Package textcomp Info: Setting bch sub-encoding to TS1/4 on input line 296.
-Package textcomp Info: Setting put sub-encoding to TS1/5 on input line 297.
-Package textcomp Info: Setting uag sub-encoding to TS1/5 on input line 298.
-Package textcomp Info: Setting ugq sub-encoding to TS1/5 on input line 299.
-Package textcomp Info: Setting ul8 sub-encoding to TS1/4 on input line 300.
-Package textcomp Info: Setting ul9 sub-encoding to TS1/4 on input line 301.
-Package textcomp Info: Setting augie sub-encoding to TS1/5 on input line 302.
-Package textcomp Info: Setting dayrom sub-encoding to TS1/3 on input line 303.
-Package textcomp Info: Setting dayroms sub-encoding to TS1/3 on input line 304.
-
-Package textcomp Info: Setting pxr sub-encoding to TS1/0 on input line 305.
-Package textcomp Info: Setting pxss sub-encoding to TS1/0 on input line 306.
-Package textcomp Info: Setting pxtt sub-encoding to TS1/0 on input line 307.
-Package textcomp Info: Setting txr sub-encoding to TS1/0 on input line 308.
-Package textcomp Info: Setting txss sub-encoding to TS1/0 on input line 309.
-Package textcomp Info: Setting txtt sub-encoding to TS1/0 on input line 310.
-Package textcomp Info: Setting lmr sub-encoding to TS1/0 on input line 311.
-Package textcomp Info: Setting lmdh sub-encoding to TS1/0 on input line 312.
-Package textcomp Info: Setting lmss sub-encoding to TS1/0 on input line 313.
-Package textcomp Info: Setting lmssq sub-encoding to TS1/0 on input line 314.
-Package textcomp Info: Setting lmvtt sub-encoding to TS1/0 on input line 315.
-Package textcomp Info: Setting qhv sub-encoding to TS1/0 on input line 316.
-Package textcomp Info: Setting qag sub-encoding to TS1/0 on input line 317.
-Package textcomp Info: Setting qbk sub-encoding to TS1/0 on input line 318.
-Package textcomp Info: Setting qcr sub-encoding to TS1/0 on input line 319.
-Package textcomp Info: Setting qcs sub-encoding to TS1/0 on input line 320.
-Package textcomp Info: Setting qpl sub-encoding to TS1/0 on input line 321.
-Package textcomp Info: Setting qtm sub-encoding to TS1/0 on input line 322.
-Package textcomp Info: Setting qzc sub-encoding to TS1/0 on input line 323.
-Package textcomp Info: Setting qhvc sub-encoding to TS1/0 on input line 324.
-Package textcomp Info: Setting futs sub-encoding to TS1/4 on input line 325.
-Package textcomp Info: Setting futx sub-encoding to TS1/4 on input line 326.
-Package textcomp Info: Setting futj sub-encoding to TS1/4 on input line 327.
-Package textcomp Info: Setting hlh sub-encoding to TS1/3 on input line 328.
-Package textcomp Info: Setting hls sub-encoding to TS1/3 on input line 329.
-Package textcomp Info: Setting hlst sub-encoding to TS1/3 on input line 330.
-Package textcomp Info: Setting hlct sub-encoding to TS1/5 on input line 331.
-Package textcomp Info: Setting hlx sub-encoding to TS1/5 on input line 332.
-Package textcomp Info: Setting hlce sub-encoding to TS1/5 on input line 333.
-Package textcomp Info: Setting hlcn sub-encoding to TS1/5 on input line 334.
-Package textcomp Info: Setting hlcw sub-encoding to TS1/5 on input line 335.
-Package textcomp Info: Setting hlcf sub-encoding to TS1/5 on input line 336.
-Package textcomp Info: Setting pplx sub-encoding to TS1/3 on input line 337.
-Package textcomp Info: Setting pplj sub-encoding to TS1/3 on input line 338.
-Package textcomp Info: Setting ptmx sub-encoding to TS1/4 on input line 339.
-Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
-)
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen137
 ) (./main.aux)
@@ -369,13 +288,6 @@ LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 77.
 LaTeX Font Info:    ... okay on input line 77.
 LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 77.
-LaTeX Font Info:    ... okay on input line 77.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 77.
-LaTeX Font Info:    Try loading font information for TS1+cmr on input line 77.
-
-(/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
-File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
 LaTeX Font Info:    ... okay on input line 77.
 
 -- Lines per column: 56 (exact).
@@ -505,179 +417,177 @@ he
 
 
 ]) (./LiteratureReview.tex
-Underfull \hbox (badness 10000) in paragraph at lines 12--25
+Underfull \hbox (badness 2443) in paragraph at lines 1--8
+\OT1/ptm/m/n/10 Crossover (SBX) op-er-a-tor is ex-plained, which is used
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 11--24
 \OT1/ptm/m/n/10 Multi-objective Op-ti-miza-tion Al-go-rithm (SMS-EMOA)
  []
 
 
-Underfull \hbox (badness 2828) in paragraph at lines 12--25
+Underfull \hbox (badness 2828) in paragraph at lines 11--24
 \OT1/ptm/m/n/10 [5]. There-fore, they are rep-re-sen-ta-tive meth-ods of the
  []
 
 
-Underfull \hbox (badness 1742) in paragraph at lines 28--38
-\OT1/ptm/m/n/10 such as nich-ing crowd-ing and/or clus-ter-ing are usu-ally
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 55--63
+Underfull \hbox (badness 10000) in paragraph at lines 51--61
  \OT1/ptm/m/it/10 2) De-com-po-si-tion Based MOEAs - MOEA/D: [][]
  []
 
 
-Underfull \hbox (badness 2418) in paragraph at lines 55--63
+Underfull \hbox (badness 2418) in paragraph at lines 51--61
 \OT1/ptm/m/n/10 Decomposition-based MOEAs [4] trans-form a MOP in
  []
 
 
-Underfull \hbox (badness 1371) in paragraph at lines 55--63
+Underfull \hbox (badness 1371) in paragraph at lines 51--61
 \OT1/ptm/m/n/10 a set of single-objective op-ti-miza-tion prob-lems that are
  []
 
 
-Underfull \hbox (badness 5637) in paragraph at lines 55--63
+Underfull \hbox (badness 5637) in paragraph at lines 51--61
 \OT1/ptm/m/n/10 con-sid-ered si-mul-ta-ne-ously. This trans-for-ma-tion can be
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 64--73
-\OT1/ptm/m/n/10 through the use of neigh-bor-hoods. Par-tic-u-larly, the
- []
-
-<img/SBX_eta_20_2D.png, id=16, 481.8pt x 361.35pt>
-File: img/SBX_eta_20_2D.png Graphic file (type png)
- <use img/SBX_eta_20_2D.png>
-Package pdftex.def Info: img/SBX_eta_20_2D.png used on input line 79.
-(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
-
-<img/SBX_eta_20_3D.png, id=17, 481.8pt x 361.35pt>
-File: img/SBX_eta_20_3D.png Graphic file (type png)
- <use img/SBX_eta_20_3D.png>
-Package pdftex.def Info: img/SBX_eta_20_3D.png used on input line 80.
-(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
-
-Overfull \hbox (21.50006pt too wide) in paragraph at lines 78--82
- [][] 
+Underfull \hbox (badness 3000) in paragraph at lines 62--73
+\OT1/ptm/m/n/10 MOEA. It in-cludes sev-eral prin-ci-ple such as prob-lem
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--95
+Underfull \hbox (badness 10000) in paragraph at lines 77--87
  \OT1/ptm/m/it/10 3) In-di-ca-tor Based MOEAs - SMS-EMOA: [][] \OT1/ptm/m/n/10 
 In
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--95
+Underfull \hbox (badness 10000) in paragraph at lines 77--87
 \OT1/ptm/m/n/10 multi-objective op-ti-miza-tion sev-eral qual-ity in-di-ca-tors
 
  []
 
 
-Underfull \hbox (badness 4060) in paragraph at lines 85--95
+Underfull \hbox (badness 4060) in paragraph at lines 77--87
 \OT1/ptm/m/n/10 have been de-vel-oped to com-pare the per-for-mance of
  []
 
 
-Underfull \hbox (badness 1635) in paragraph at lines 85--95
+Underfull \hbox (badness 1635) in paragraph at lines 77--87
 \OT1/ptm/m/n/10 the MOEAs to guide the op-ti-miza-tion pro-cess. Among
  []
 
 
-Underfull \hbox (badness 4193) in paragraph at lines 85--95
-\OT1/ptm/m/n/10 Pareto-compliance qual-ity in-di-ca-tor [18]. The prin-ci-pal
+Underfull \hbox (badness 4193) in paragraph at lines 77--87
+\OT1/ptm/m/n/10 Pareto-compliance qual-ity in-di-ca-tor [19]. The prin-ci-pal
+ []
+
+<img/SBX_eta_20_2D.png, id=16, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_2D.png Graphic file (type png)
+ <use img/SBX_eta_20_2D.png>
+Package pdftex.def Info: img/SBX_eta_20_2D.png used on input line 104.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+<img/SBX_eta_20_3D.png, id=17, 481.8pt x 361.35pt>
+File: img/SBX_eta_20_3D.png Graphic file (type png)
+ <use img/SBX_eta_20_3D.png>
+Package pdftex.def Info: img/SBX_eta_20_3D.png used on input line 105.
+(pdftex.def)             Requested size: 129.0pt x 96.74977pt.
+
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 103--107
+ [][] 
  []
 
 <img/DensitySBX_English.png, id=18, 1290.8225pt x 920.43875pt>
 File: img/DensitySBX_English.png Graphic file (type png)
 
 <use img/DensitySBX_English.png>
-Package pdftex.def Info: img/DensitySBX_English.png used on input line 111.
+Package pdftex.def Info: img/DensitySBX_English.png used on input line 113.
 (pdftex.def)             Requested size: 180.67499pt x 128.83246pt.
- [2 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png>]
-Underfull \hbox (badness 1748) in paragraph at lines 125--144
+ [2]
+Underfull \hbox (badness 1748) in paragraph at lines 127--146
 \OT1/ptm/m/n/10 op-er-a-tors, chil-dren so-lu-tions are cre-ated around one of
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 147--152
+Underfull \hbox (badness 10000) in paragraph at lines 149--156
  \OT1/ptm/m/it/10 1) The Sim-u-lated Bi-nary Crossover - SBX: [][] \OT1/ptm/m/n
 /10 The
  []
 
 
-Underfull \hbox (badness 5862) in paragraph at lines 147--152
+Underfull \hbox (badness 5862) in paragraph at lines 149--156
 \OT1/ptm/m/n/10 re-pro-duc-tion op-er-a-tors are one of the most rel-e-vant
  []
 
 
-Underfull \hbox (badness 5203) in paragraph at lines 147--152
+Underfull \hbox (badness 5203) in paragraph at lines 149--156
 \OT1/ptm/m/n/10 com-po-nents that in-flu-ence the search pro-cess of the
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 153--159
-[]\OT1/ptm/m/n/10 The Sim-u-lated Bi-nary Crossover (SBX) [24] is
+Underfull \hbox (badness 10000) in paragraph at lines 157--163
+[]\OT1/ptm/m/n/10 The Sim-u-lated Bi-nary Crossover (SBX) [25] is
  []
 
-<img/SBX_eta_20_2D_pv_1.png, id=28, 481.8pt x 361.35pt>
+<img/SBX_eta_20_2D_pv_1.png, id=22, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D_pv_1.png Graphic file (type png)
 
 <use img/SBX_eta_20_2D_pv_1.png>
-Package pdftex.def Info: img/SBX_eta_20_2D_pv_1.png used on input line 187.
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_1.png used on input line 191.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
-<img/SBX_eta_20_2D_pv_01.png, id=29, 481.8pt x 361.35pt>
+<img/SBX_eta_20_2D_pv_01.png, id=23, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D_pv_01.png Graphic file (type png)
 
 <use img/SBX_eta_20_2D_pv_01.png>
-Package pdftex.def Info: img/SBX_eta_20_2D_pv_01.png used on input line 188.
+Package pdftex.def Info: img/SBX_eta_20_2D_pv_01.png used on input line 192.
 (pdftex.def)             Requested size: 129.0pt x 96.74977pt.
 
-Overfull \hbox (21.50006pt too wide) in paragraph at lines 186--190
+Overfull \hbox (21.50006pt too wide) in paragraph at lines 190--194
  [][] 
  []
 
-[3 <./img/DensitySBX_English.png> <./img/SBX_eta_20_2D_pv_1.png> <./img/SBX_eta
-_20_2D_pv_01.png>]
-Underfull \hbox (badness 3635) in paragraph at lines 289--297
-\OT1/ptm/m/n/10 crossover prob-a-bil-ity'' [6] or ``Dis-crete Re-com-bi-na-tion
-''
- []
-
-
-Underfull \hbox (badness 2409) in paragraph at lines 289--297
-\OT1/ptm/m/n/10 has se-rial im-pli-ca-tions, since that in-ter-change vari-able
-s
- []
-
+[3 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png> <./img/DensitySBX_Englis
+h.png> <./img/SBX_eta_20_2D_pv_1.png> <./img/SBX_eta_20_2D_pv_01.png>]
 <img/SBX_eta_2.png, id=38, 481.8pt x 361.35pt>
 File: img/SBX_eta_2.png Graphic file (type png)
  <use img/SBX_eta_2.png>
-Package pdftex.def Info: img/SBX_eta_2.png used on input line 316.
+Package pdftex.def Info: img/SBX_eta_2.png used on input line 299.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
 
 <img/SBX_eta_20.png, id=39, 481.8pt x 361.35pt>
 File: img/SBX_eta_20.png Graphic file (type png)
  <use img/SBX_eta_20.png>
-Package pdftex.def Info: img/SBX_eta_20.png used on input line 317.
+Package pdftex.def Info: img/SBX_eta_20.png used on input line 300.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
 
-Overfull \hbox (11.18573pt too wide) in paragraph at lines 315--319
+Overfull \hbox (11.18573pt too wide) in paragraph at lines 298--302
  [][] 
  []
 
 ) (./Proposal.tex
-Underfull \vbox (badness 3701) has occurred while \output is active []
+Underfull \hbox (badness 5064) in paragraph at lines 2--15
+\OT1/ptm/m/n/10 mod-i-fi-ca-tions are pro-posed. Firstly, the prob-a-bil-ity to
 
- [4]
-[5 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]) (./ExperimentalValidation.tex
+ []
 
-Underfull \hbox (badness 10000) in paragraph at lines 61--61
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [4 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]
+Underfull \hbox (badness 2401) in paragraph at lines 32--44
+\OT1/ptm/m/n/10 com-po-nent pre-vi-ously men-tioned. In gen-eral is ap-plied
+ []
+
+[5]) (./ExperimentalValidation.tex
+Underfull \hbox (badness 10000) in paragraph at lines 72--72
 [][][]\OT1/ptm/m/n/8 The de-tailed re-sults can be con-sulted in the web page
  []
 
 [6]
-Underfull \hbox (badness 1655) in paragraph at lines 75--119
+Underfull \hbox (badness 1655) in paragraph at lines 89--133
 \OT1/ptm/m/n/10 Dif-fer-ence'' is low both with two ob-jec-tives and three
  []
 
@@ -688,7 +598,7 @@ Underfull \hbox (badness 2189) in paragraph at lines 205--239
  []
 
 
-Underfull \vbox (badness 4229) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
 (./main.bbl
@@ -739,20 +649,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 63--67
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 106--110
+Underfull \hbox (badness 10000) in paragraph at lines 112--116
 \OT1/ptm/m/n/8 study,'' in \OT1/ptm/m/it/8 In-ter-na-tional Con-fer-ence on Ele
 c-tron-ics Com-puter
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 191--195
+Underfull \hbox (badness 1648) in paragraph at lines 190--194
 []\OT1/ptm/m/n/8 S. Huband, L. Barone, L. While, and P. Hingston, \OT1/ptm/m/it
 /8 A Scal-able
  []
 
 (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
 File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
-) [8])
+))
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -764,38 +674,36 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[9
-
-] (./main.aux) ) 
+[8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4717 strings out of 493304
- 70484 string characters out of 6139871
- 170933 words of memory out of 5000000
- 8054 multiletter control sequences out of 15000+600000
+ 4274 strings out of 493304
+ 63632 string characters out of 6139871
+ 168535 words of memory out of 5000000
+ 7620 multiletter control sequences out of 15000+600000
  47757 words of font info for 92 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,15n,26p,682b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</us
-r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
-ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.p
-fb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/f
-onts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.
-pfb>
-Output written on main.pdf (9 pages, 336463 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on main.pdf (8 pages, 335942 bytes).
 PDF statistics:
- 116 PDF objects out of 1000 (max. 8388607)
- 74 compressed objects within 1 object stream
+ 113 PDF objects out of 1000 (max. 8388607)
+ 72 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  36 words of extra memory for PDF output out of 10000 (max. 10000000)
 

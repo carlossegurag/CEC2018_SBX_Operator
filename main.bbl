@@ -91,6 +91,12 @@ M.~Pil{\'a}t, ``Evolutionary multiobjective optimization: A short survey of the
   state-of-the-art,'' \emph{Proceedings of the Contributed Papers Part
   I-Mathematics and Computer Sciences, WDS, Prague, Czech}, pp. 1--4, 2010.
 
+\bibitem{horoba2008benefits}
+C.~Horoba and F.~Neumann, ``Benefits and drawbacks for the use of
+  epsilon-dominance in evolutionary multi-objective optimization,'' in
+  \emph{Proceedings of the 10th annual conference on Genetic and evolutionary
+  computation}.\hskip 1em plus 0.5em minus 0.4em\relax ACM, 2008, pp. 641--648.
+
 \bibitem{Joel:NSGAIII}
 K.~Deb and H.~Jain, ``An evolutionary many-objective optimization algorithm
   using reference-point-based nondominated sorting approach, part i: Solving
@@ -159,13 +165,6 @@ K.~Deb and R.~B. Agrawal, ``Simulated binary crossover for continuous search
 K.~Deb and H.-G. Beyer, \emph{Self-adaptive genetic algorithms with simulated
   binary crossover}.\hskip 1em plus 0.5em minus 0.4em\relax Secretary of the
   SFB 531, 1999.
-
-\bibitem{ma2016multiobjective}
-X.~Ma, F.~Liu, Y.~Qi, X.~Wang, L.~Li, L.~Jiao, M.~Yin, and M.~Gong, ``A
-  multiobjective evolutionary algorithm based on decision variable analyses for
-  multiobjective optimization problems with large-scale variables,'' \emph{IEEE
-  Transactions on Evolutionary Computation}, vol.~20, no.~2, pp. 275--298,
-  2016.
 
 \bibitem{muhlenbein1993predictive}
 H.~M{\"u}hlenbein and D.~Schlierkamp-Voosen, ``Predictive models for the

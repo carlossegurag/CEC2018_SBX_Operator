@@ -19,43 +19,43 @@ Warning--empty booktitle in Joel:UNDX
 Done.
 You've used 35 entries,
             4024 wiz_defined-function locations,
-            1399 strings with 21742 characters,
-and the built_in function-call counts, 27055 in all, are:
-= -- 2171
-> -- 641
-< -- 245
-+ -- 350
-- -- 105
-* -- 1293
-:= -- 3997
-add.period$ -- 79
+            1400 strings with 21686 characters,
+and the built_in function-call counts, 26833 in all, are:
+= -- 2153
+> -- 617
+< -- 243
++ -- 338
+- -- 99
+* -- 1276
+:= -- 3964
+add.period$ -- 80
 call.type$ -- 35
 change.case$ -- 30
 chr.to.int$ -- 570
 cite$ -- 38
-duplicate$ -- 1909
-empty$ -- 2231
-format.name$ -- 136
-if$ -- 6277
+duplicate$ -- 1896
+empty$ -- 2238
+format.name$ -- 130
+if$ -- 6232
 int.to.chr$ -- 0
 int.to.str$ -- 35
-missing$ -- 322
+missing$ -- 316
 newline$ -- 132
 num.names$ -- 37
-pop$ -- 746
+pop$ -- 736
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 2102
+skip$ -- 2088
 stack$ -- 0
 substring$ -- 1355
-swap$ -- 1594
-text.length$ -- 55
+swap$ -- 1574
+text.length$ -- 53
 text.prefix$ -- 0
 top$ -- 5
 type$ -- 35
 warning$ -- 3
 while$ -- 131
 width$ -- 37
-write$ -- 356
+write$ -- 354
 (There were 3 warnings)

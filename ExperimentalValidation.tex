@@ -1,4 +1,4 @@
-This section is devoted to validate our proposal named as ``Case 5''.
+This section is devoted to validate our proposal (Case 5).
 %
 The WFG \cite{Joel:WFG}, DTLZ \cite{Joel:DTLZ_2} and UF \cite{zhang2009performance} test problems have been used for our purpose.
 %
@@ -6,7 +6,7 @@ Our experimental validation includes the Differential Evolution based variants D
 %
 Given that all of them are stochastic algorithms, each execution was repeated $35$ times with different seeds.
 %
-The common configuration in all of them was the following: the stopping criterion was set to $25,000$ generations, the population size was fixed to 100, the WFG test problems were configured with two and three objectives, setting 24 parameters, where 20 of them are distance parameters and 4 are position parameters.
+The common configuration in all of them was the following: the stopping criterion was setted to $25,000$ generations, the population size was fixed to 100, the WFG test problems were configured with two and three objectives, setting 24 parameters, where 20 of them are distance parameters and 4 are position parameters.
 %
 Specifically, in the DTLZ test instances, the number of decision variables is set to $n=M+r-1$, where $r=\{5, 10, 20\}$ for DTLZ1, DTLZ2 to DTLZ6 and DTLZ7 respectively, as is suggested by the authors \cite{Joel:DTLZ_2}.  
 % 
@@ -14,7 +14,7 @@ The UF benchmark is composed of ten test instances, where the first seven are of
 %
 In general, the crossover and mutation operators are SBX and polynomial respectively, with a crossover probability of 0.9 and mutation probability of $1/n$, also the crossover and mutation distribution indexes were assigned to 20 and 50 respectively.
 %
-The extra parametrization of each algorithm is as follows:
+The extra-parametrization of each algorithm is as follows:
 \begin{itemize}
 \item \textbf{DE-Variants}: CR = 0.3 and F = 0.5.
 \item \textbf{SMS-EMOA}: offset = 100.
@@ -41,17 +41,28 @@ An algorithm $X$ is said to win algorithm $Y$ when the differences between them 
 
 In addition, pair-wise statistical tests with HV and IGD+ were performed (Table \ref{tab:statistical_Tests}).
 %
-For each instance, the column ``$\uparrow$'' reports the number of comparisons where the statistical tests confirmed the superiority of the MOEA listed in the corresponding group, whereas the column ``$\downarrow$'' reports the number of cases where it was inferior and ``$\longleftrightarrow$'' indicates that are not significantly different and is considered as a tie.
+For each instance, the column ``$\uparrow$'' reports the number of comparisons where the statistical tests confirmed the superiority of the MOEA listed in the corresponding group, whereas the column ``$\downarrow$'' reports the number of cases where it was inferior and ``$\longleftrightarrow$'' indicates that are not significantly different and are considered as a tie.
 %%
 
 
 Based in the statistical tests\footnote{DE is not considered in the statistical tests.} (Table \ref{tab:statistical_Tests}), generally speaking our proposal (Case 5) has the best scores.
 %
-Our proposal is outperformed by the Case 4 considering three objectives by the NSGA-II, this might occurs due that this MOEA applies a binary tournament selection where is considered the dominance concept, thus some level of diversity is maintained, therefore in some problems some optimal regions are reached, and with other problems the solutions could be far from the Pareto front.
+Particularly, considering three objective and with the NSGA-II, the Case 4 is better than our proposal.
 %
-Although that in average the metrics are similar between the Case 4 and our proposal with three objectives, the average difference with the best indicates that our proposal is the closest to the best since that it shows in the ``Average Best Difference'' IGD+ with $0.020$ against the Case 4 with $0.023$.
+This might occurs for the ranking mechanism of this MOEA.
 %
-Also, inspecting the statistical test, the Case 4 has more lost than our proposal $10$ against $9$ and $15$ against $9$ of the HV and IGD+ respectively.
+Since that the NSGA-II applies a binary tournament selection based in dominance concept and crowding procedure, thus an apropiate level of diversity is maintained.
+%
+As result some promising regions are reached.
+
+%
+Although that with three objective the Case 4 and our proposal have similar average results.
+%
+The average difference with the best indicates that our proposal is mostly closest to the best values.
+%
+This since that it shows $0.020$ in the ``Average Best Difference'' IGD+ against the Case 4 with $0.023$.
+%
+Also, inspecting the statistical tests, the Case 4 has more loses than our proposal ($10$ against $9$ and $15$ against $9$) of the HV and IGD+ respectively.
 %
 However, the MOEA/D and SMS-EMOA which are more elitist algorithms and do not consider the dominance concept at all, are not affected in this sense.
 %
@@ -60,16 +71,19 @@ Anyway, our proposal and the Case 3 reports significantly better results that th
 
 In order to better understand the behavior of our proposal, the Tables \ref{tab:Metrics_2} and \ref{tab:Metrics_3} shows a summary average of Normalized HV and IGD+ considering all the instances\footnote{The detailed results can be consulted in the web page https:\//\//github.com\//joelchaconcastillo\//SBX\_CEC2018.}.
 %
-Also is counted the number of instances which attain the best results labeled by ``Best Counts''.
+Also is counted the number of instances which attained the best results labeled by ``Best Counts''.
 %
 Additionally, the average of difference with the best result is showed, this aims to provide a metric which indicates the difference with the best result attained in each problem.
 %
-Although that DE improves our proposal with two objectives, in the Table \ref{tab:Metrics_2}  is showed that our proposal provides near results than the bests.
+
+Although that the DE variants provides better average results than our proposal considering two objective, our proposal provides near solutions to the best, showing its stability.
+%
+Also according the number of objectives increase to three our proposal provides the best results.
+%
+The main reason is that DE is seriously deteriorated as the number of objectives increases, also it converges in a fast way, since it incorporates an agressive selection operator.
 %
 
-On the other hand our proposal provides the best results considering three objectives, it is interesting remark that the performance of DE is seriously deteriorated according increases the number of objectives. 
-%
-Despite the fact that DE variants have high ``Best Count'' values, in average it is improved by the Case 4 and Case 5, this might occurs because DE is directly influence by the parameters (CR and FR), therefore in some instances the DE variants attains the best results, and in other instances the solutions are far from the Pareto front.
+Despite the fact that DE variants have high ``Best Count'' values, in average it is improved by the Case 4 and Case 5, this might occurs because DE is directly influenced by the probability crossover ($CR$) and the mutation factor ($F$), therefore in some instances the DE variants attained the best results, and in other instances the solutions are far from the Pareto front.
 %
 
 On the other hand, our proposal shows a robust behavior in the state-of-the-art MOEAs, in fact the ``Average Best Difference'' is low both with two objectives and three objectives that confirms the stability and superiority of our proposal.
@@ -143,3 +157,5 @@ UF 1-10 & $[2, ..., 2]$ \\ \hline
 % \caption{Average of Inverted Genralized Distance Plus (IGD+) considering all the instances and three objective.}
 % \label{fig_sim}
 % \end{figure}
+
+

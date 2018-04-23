@@ -1,11 +1,10 @@
-
 This section is devoted to review some of the most important works that are highly related to the research presented in this paper.
 %
 Firstly, the most important MOEAs paradigms are defined.
 %
 Thereafter, some relevant classifications of crossover operators are discussed.
 %
-Finally, the popular Simulated Binary Crossover (SBX) operator, which is used extensively in this paper, is explained in detail.
+Finally, the popular Simulated Binary Crossover (SBX) operator is explained, which is used extensively in this paper.
 
 \subsection{Multi-objective Evolutionary Algorithms}
 
@@ -15,9 +14,9 @@ In order to better classify them, several taxonomies have been proposed \cite{Jo
 %
 Attending to the principles of design, MOEAs can be based on Pareto dominance, indicators and/or decomposition \cite{pilat2010evolutionary}.
 %
-Currently, none of them have reported a clear advantage over the other ones.
+Reciently, none of them have reported a clear advantage over the other ones.
 %
-Particularly, the experimental validation has been carry out by including the Non-Dominated Sorting Genetic Algorithm (NSGA-II) \cite{Joel:NSGAII}, the MOEA based on Decomposition \cite{Joel:MOEAD}, and the $S$-Metric Selection Evolutionary Multi-objective Optimization Algorithm (SMS-EMOA) \cite{Joel:SMSEMOA}.
+Particularly, the experimental validation has been carried out by including the Non-Dominated Sorting Genetic Algorithm (NSGA-II) \cite{Joel:NSGAII}, the MOEA based on Decomposition \cite{Joel:MOEAD}, and the $S$-Metric Selection Evolutionary Multi-objective Optimization Algorithm (SMS-EMOA) \cite{Joel:SMSEMOA}.
 %
 Therefore, they are representative methods of the domination-based, decomposition-based and indicator-based paradigms, respectively.
 %
@@ -29,17 +28,14 @@ One of the most recognized paradigms are the domination based algorithms, partic
 %
 Since that the dominance relation does not inherently promotes diversity in the objective space, auxiliary techniques such as niching crowding and/or clustering are usually integrated to obtain an acceptable spread and diversity in the objective space.
 %
-A critic drawback to implement the dominance relation is that it is seriously affected as the number of objectives increases.
+A critical drawback of the dominance relation is caused by the dimensionality of the objective space.
 %
-Due to this the selection pressure is decremented substantially (exponentially)
+In fact the selection pressure is decremented substantially as the number of objectives increase.
 %
-Some strategies have been developed to deal with this issue,
-%
-
-A principall drawback of implement the dominance relation is tharelated with the number of objectives, therefore if the number of function objective increase the selection pressure is decremented substantially, based in this, some strategies have been developed to deal with the many-objective problems.
+Since this, some strategies have been developed to deal with this issue \cite{horoba2008benefits}.
 
 %
-Probably, the most popular technique of this group is the NSGA-II.
+One of the most popular techniques of this group is the NSGA-II.
 %
 This algorithm \cite{Joel:NSGAII} implements a special parent selection operator.
 %
@@ -47,7 +43,7 @@ This operator is based on two mechanisms: fast-non-dominated-sort and crowding.
 %
 The first one tends to provide a convergence to the Pareto front and the second one promotes the preservation of diversity in the objective space.
 %
-A current version is the NSGA-III which is designed to deal with many-objective problems \cite{Joel:NSGAIII}.%  \cite{horoba2008benefits}.
+A recent version is the NSGA-III, which is designed to deal with many-objective problems \cite{Joel:NSGAIII}.%  \cite{horoba2008benefits}.
 %
 
 \subsubsection{Decomposition Based MOEAs - MOEA/D}
@@ -56,32 +52,28 @@ Decomposition-based MOEAs \cite{Joel:MOEAD} transform a MOP in a set of single-o
 %
 This transformation can be achieved through several approaches.
 %
-The most popular of them is based in a weighted Tchebycheff function, therefore it is necessary provide weight vectors that are well distributed in the $m-1$ simplex that aims well-spread solutions.
+The most popular of them is applying a weighted Tchebycheff function, therefore it is necessary provide weight vectors that are well distributed in the $m-1$ simplex that aims well-spread solutions.
 %
-However, an important drawback of this kind of approaches is that the quality of the approximations is highly related with the Pareto front shape and the weight vectors.
+However, an important drawback of this kind of approaches resides in the Pareto front geometry.
+%
+Particularly, the weight vectors could not be favorably to irregular Pareto front shapes.
 %
 
-MOEA/D \cite{Joel:MOEAD} is a recently designed decomposition-base MOEA.
+MOEA/D \cite{Joel:MOEAD} is a recently designed decomposition-based MOEA.
 %
-Its main principles include problem decomposition, weighted aggregation of objectives and mating restrictions through the use of neighborhoods.
+It includes several principle such as problem decomposition, weighted aggregation of objectives and mating restrictions with neighborhoods definitions.
 %
 Particularly, the neighborhoods are considered in the variation operators.
 %
-A very used variant of the MOEA/D is the MOEA/D-DE, which use the DE operators \cite{price2006differential} and the polynomial mutation operator \cite{hamdan2012distribution} in the reproduction phase, also it has two extra measures for maintaining the population diversity \cite{zhang2009performance}.
+A very used variant of the MOEA/D is the MOEA/D-DE, which use the DE operators \cite{price2006differential} and the polynomial mutation operator \cite{hamdan2012distribution} in the reproduction phase.
+%
+Additionally, it has two extra measures for maintaining the population diversity \cite{zhang2009performance}.
 %
 %However, these two extra mechanisms are not enough to deal with long-term executions.
 
 
 \subsubsection{Indicator Based MOEAs - SMS-EMOA}
-\begin{figure}[t]
-\centering
-\begin{tabular}{cc}
-   \includegraphics[width=0.25\textwidth]{img/SBX_eta_20_2D.png} 
-   \includegraphics[width=0.25\textwidth]{img/SBX_eta_20_3D.png} 
-\end{tabular}
-\caption{Simulations of the SBX operator with a distribution index of 20, considering the parents $P_1=(-1.0, -1.0)$ and $P_2=(1.0, 1.0)$ and $P_1=(-1.0, -1.0, -1.0)$ and $P_2=(1.0, 1.0, 1.0)$ for two and three variables respectively.}
-\label{fig:Simulations_Index_20}
-\end{figure}
+
 In multi-objective optimization several quality indicators have been developed to compare the performance of MOEAs.
 %
 Since these indicators measure the quality of the approximations attained by MOEAs, a paradigm based on the application of these indicators was proposed.
@@ -106,6 +98,16 @@ Particularly, the replacement phase erases the individual of the worst ranked fr
 Taking into account the promising behavior of SMS-EMOA, it has been used in our experimental validation.
 %
 %
+\begin{figure}[t]
+\centering
+\begin{tabular}{cc}
+   \includegraphics[width=0.25\textwidth]{img/SBX_eta_20_2D.png} 
+   \includegraphics[width=0.25\textwidth]{img/SBX_eta_20_3D.png} 
+\end{tabular}
+\caption{Simulations of the SBX operator with a distribution index of 20, the parents are located in $P_1=(-1.0, -1.0)$ and $P_2=(1.0, 1.0)$ and $P_1=(-1.0, -1.0, -1.0)$ and $P_2=(1.0, 1.0, 1.0)$ for two and three variables respectively.}
+\label{fig:Simulations_Index_20}
+\end{figure}
+
 \begin{figure}[!t]
 \centering
 \includegraphics[width=2.5in]{img/DensitySBX_English.png}
@@ -113,7 +115,7 @@ Taking into account the promising behavior of SMS-EMOA, it has been used in our 
 \label{fig:fig_sim}
 \end{figure}
 \subsection{Crossover operators}
-Crossover operators are designed to generate offspring solutions using information of the parent solutions.
+The crossover operators are designed to generate offspring solutions using information of the parent solutions.
 %
 They combine the feature of two or more parent solutions to form children solutions.
 %
@@ -146,20 +148,22 @@ Among the crossover operators, SBX is probably the most frequently used operator
 
 The reproduction operators are one of the most relevant components that influence the search process of the GAs.
 %
-Specifically, the crossover and mutation operators are highly related with the diversity affecting directly the quality of the solutions.
+Specifically, the crossover and mutation operators are highly related with the diversity of solutions.
+%
+Hence, the quality solutions can be affected.
 %
 %Particularly, in this paper is discussed the crossover operator.
 
 The Simulated Binary Crossover (SBX) \cite{deb1994simulated} is popularly implemented in GAs \cite{Joel:NSGAII,Joel:SMSEMOA} and is classified as Parent-Centric, meaning that two children values ($c_1$ and $c_2$) are created around the parent values ($p_1$ and $p_2$).
 %
-Also the process of generate the child values is based in a probability distribution.
+Also the process of generate the children values is based in a probability distribution.
 %
 This distribution is defined by a non-dimensional variable, better known as the spread factor $\beta = |c_1 - c_2 | / |p_1 - p_2|$, indicating the ratio of the spread children values related with the parent values.
 %
 
 Additionally, this density function uses a distribution index $\eta_c$ (user-defined control parameter) that alters the exploration capability of the operator.
 %
-Specifically, a small index induces a larger probability of building children values more dissimilar than parents values, whereas with a high index the probabilities of generating children solutions that are similar to the parents increase as is showed in the Figure \ref{fig:fig_sim}.
+Specifically, a small index induces a larger probability of building children values more dissimilar than parents values, whereas with a high index are generated solutions more similar to the parents as is showed in the Figure \ref{fig:fig_sim}.
 %
 
 Principally, the SBX has non-zero probability of creating any number in the search space by recombining any two parent values from the search space.
@@ -177,7 +181,7 @@ The probability distribution to create an offspring value is defined as a functi
 Based in the mean-preserving property of children values and parent values, the distribution probability has the following properties:
 \begin{itemize}
 \item Both offspring values are equi-distant from parent values.
-\item There exist a non-zero probability to create offspring solutions in the entire feasible space  from any two parent values.
+\item There exist a non-zero probability to create offspring solutions in the entire feasible space from any two parent values.
 \item The overall probability of creating a pair offspring values within the range of parent values is identical to the overall probability of creating two offspring values outside  the range of parent values.
 \end{itemize}
 
@@ -216,7 +220,7 @@ The above equation only considers a optimization problem having no variable boun
 %
 In most practical problems, each variable is bounded within a lower and upper bound.
 %
-Thus, Deb and Beyer in 1999 \cite{deb1999self} proposed a modification of the probability distribution showed and is in the Equation (\ref{eq:sbx_spread}).
+Thus, Deb and Beyer in 1999 \cite{deb1999self} proposed a modification of the probability distribution showed in the Equation (\ref{eq:sbx_spread}).
 %
 \begin{equation} \label{eq:sbx_spread}
     \beta(u)= 
@@ -231,7 +235,7 @@ c_1 = 0.5(1 + \beta(u))p_1 + 0.5(1-\beta(u))p_2
 \begin{equation} \label{eq:child_2}
 c_2 = 0.5(1 + \beta(u))p_1 + 0.5(1-\beta(u))p_2
 \end{equation}
-where the child $c_1$ which is nearest to $p_1$ is calculated according the Equation (\ref{eq:child_1}).
+In this fashion, the child $c_1$ which is nearest to $p_1$ is calculated according the Equation (\ref{eq:child_1}).
 %
 Therefore, for $p_1 < p_2$ and the lower bound $a$ is closer to $p_1$ than to $p_2$, thus $\gamma = 1/(\alpha^{\eta_c + 1})$, where $\alpha = 1 + (p_1 - a) / (p_2 - p_1)$.
 %
@@ -273,33 +277,51 @@ However those authors recognized the important implications with the linkage iss
 \subsubsection{Implementation and analyses of SBX operator}
 This section discusses the principal characteristics of SBX operator.
 %
-Essentially, the behavior of operator is directly affected by three key components.
+Essentially, the behavior of this operator is directly affected by three key components.
 %
-Firstly, it applies a probability of altering each variable which is fixed to $0.5$, therefore in average the half of each parent is copied to each child.
+Firstly, it applies a probability of altering each variable which is fixed to $0.5$, therefore in average the half of each parent is duplicate in each child.
 %
-Increasing this probability value induces more dissimilar children values, since that in average more variables are modified.
+If this probability value is increased, the children values are more dissimilar, since that in average are modified more variables.
 %
-An appropriate setting of this probability is related with the MOP, therefore a high probability value is better with objective functions that have high dependence level in the parameters, due that it provides a rotationally invariant behavior \cite{price2006differential}, this can be noticed in the Figure \ref{fig:Simulation_pv}, where a low probability provokes a bias to the axis, therefore it is an ideal approach for separable problems a difference with a high probability (right simulation) where this could be better in non-separable problems.
+An appropriate setting of this probability is related with the MOP, therefore a high probability value is better with objective functions that have high dependence level in the parameters.
 %
-Also this probability value is related with the distribution index, in fact both components have a direct effect in the similarity between parents and children.
+The behavior of variating this probability can be noticed in the Figure \ref{fig:Simulation_pv}, where a low probability provokes a bias to the axis (right side), being a suitable aproach for separable problems.
 %
-Otherwise, a low probability value is suitable for objective functions that are separable \cite{ma2016multiobjective}, due that few decision variables are modified by the crossover operation.
+On the other hand, a high probability (left side) could be better in non-separable problems.
 %
-
-The second key component consists that two offspring values are interchanged through a probability of $0.5$, in some contexts this probability is known as ``Variable uniform crossover probability'' \cite{tuvsar2007differential} or ``Discrete Recombination'' \cite{muhlenbein1993predictive}.
+Additionally, this probability value is related with the distribution index, in fact both components have a direct effect in the similarity between parents and children.
 %
-Although that in single-objective this action provides auto-adaptive behavior, in multi-objective optimization could not provide a desirable effect at first stages, the principal reason is that it could be highly disruptive.
+%Otherwise, a low probability value is suitable for objective functions that are separable \cite{ma2016multiobjective}, due that few decision variables are modified by the crossover operation.
+%
+\begin{figure}[t]
+\centering
+\begin{tabular}{c}
+   \includegraphics[width=0.24\textwidth]{img/SBX_eta_2.png}  %&
+   \includegraphics[width=0.24\textwidth]{img/SBX_eta_20.png} 
+\end{tabular}
+\caption{Simulation of the SBX operator sampling $10,000$ children values, the parents are located in $P_1=(-1.0, -1.0)$ and $P_2=(1.0, 1.0)$. The left and right are with a distribution index of $2$ and $20$ respectively.}
+\label{fig:Simulation_Case_3}
+\end{figure}
+The second key component resides in that two child values are interchanged given a defined probability (usually $0.5$).
+%
+In some contexts this probability is known as ``Variable uniform crossover probability'' \cite{tuvsar2007differential} or ``Discrete Recombination'' \cite{muhlenbein1993predictive}.
+%
+Although that in single-objective this action provides an uto-adaptive behavior, in multi-objective optimization could not provide a desirable effect at first stages, the principal reason is that it could be highly disruptive.
 %
 This components has serial implications, since that interchange variables between the children has the effect of multiple ``reflections'' in the feasible space.
 %
-However, increasing the dimensions of the decision variables has the effect of increase exponentially the number of reflections ($2^{n}-2$) as is showed in the figure \ref{fig:Simulations_Index_20} where is considered two and three decision variables.
+However, increasing the dimensions of the decision variables has the effect of increase exponentially the number of reflections ($2^{n}-2$) as is showed in the Figure \ref{fig:Simulations_Index_20} where are considered two and three decision variables.
 %
 
-Finally, the last component is the distribution index, which plays an important role, since a low index results in a greater exploration level than considering a high distribution index, in fact a distribution index of the unity has a similar effect of the Fuzzy Recombination Operator \cite{voigt1995fuzzy}, the effect of the index can be analyzed in the figure \ref{fig:Simulation_Case_3} where in the left is a simulation with a low index which implies to create more dissimilar children, also can be noticed that it has a bias of create children according to the axis.
+Finally, the last component is the distribution index, which plays an important role, since a low index results in a greater exploration levels.
+%
+In fact a distribution index of the unity has the similar effect of the Fuzzy Recombination Operator \cite{voigt1995fuzzy}, the behaviour of the different indexes can be analyzed in the Figure \ref{fig:Simulation_Case_3} where in the left is showed a simulation which consider a low index value, whereas in the right is used a high index that create similar values of the parents.
+%
+Also can be noticed that it has a bias of create children according to the axis.
 %
 
 %
-For simplicity the SBX implementation is showed in the Algorithm \ref{alg:SBX_Operator}, which is based in the most frequently used implementation integrated in the NSGA-II code published by Deb et al. \cite{Joel:NSGAII}.
+For simplicity the SBX implementation is showed in the Algorithm \ref{alg:SBX_Operator}, which is based in the most used implementation and is integrated in the NSGA-II code published by Deb et al. \cite{Joel:NSGAII}.
 %
 It requires two parents ($P_1$ and $P_2$) and create two children ($C_1$ and $C_2$).
 %
@@ -310,12 +332,4 @@ As is usual, the SBX is configured with $\delta_1 = \delta_2 = 0.5$ and $\eta_c 
 %
 It is important take into account that this configuration neither considers the dimension of the decision variables space or the criteria stop.
 
-\begin{figure}[t]
-\centering
-\begin{tabular}{c}
-   \includegraphics[width=0.24\textwidth]{img/SBX_eta_2.png}  %&
-   \includegraphics[width=0.24\textwidth]{img/SBX_eta_20.png} 
-\end{tabular}
-\caption{Simulation the SBX operator with $10,000$ children values, where the parents are located in $P_1=(-1.0, -1.0)$ and $P_2=(1.0, 1.0)$. The left and right are with a distribution index of $2$ and $20$ respectively.}
-\label{fig:Simulation_Case_3}
-\end{figure}
+
