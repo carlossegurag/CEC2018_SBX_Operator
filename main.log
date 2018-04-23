@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  22 APR 2018 22:00
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.9.20)  22 APR 2018 22:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -350,8 +350,7 @@ Package textcomp Info: Setting ptmj sub-encoding to TS1/4 on input line 340.
 )
 (/usr/share/texlive/texmf-dist/tex/latex/multirow/multirow.sty
 \bigstrutjot=\dimen137
-)
-No file main.aux.
+) (./main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 76.
@@ -368,6 +367,7 @@ LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 76.
 LaTeX Font Info:    ... okay on input line 76.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 76.
 LaTeX Font Info:    Try loading font information for TS1+cmr on input line 76.
+
 (/usr/share/texlive/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
@@ -448,107 +448,17 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 7.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-
-LaTeX Warning: Citation `Joel:Kalyanmoy' on page 1 undefined on input line 31.
+) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-LaTeX Warning: Citation `Joel:Coello' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 1 undefined on input line 31.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
-ine 34.
-
-
-LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 34.
-
-
-LaTeX Warning: Citation `brest2017single' on page 1 undefined on input line 40.
-
-
-
-LaTeX Warning: Citation `brest2008population' on page 1 undefined on input line
- 40.
-
-
-LaTeX Warning: Citation `das2011differential' on page 1 undefined on input line
- 40.
-
-
-LaTeX Warning: Citation `kukkonen2007performance' on page 1 undefined on input 
-line 44.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 1 undefined on input l
-ine 47.
-
-
-LaTeX Warning: Citation `mi2010improved' on page 1 undefined on input line 47.
-
-[1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
-
-
-]
-
-LaTeX Warning: Reference `LiteratureReview' on page 2 undefined on input line 5
-9.
-
-
-LaTeX Warning: Reference `Proposal' on page 2 undefined on input line 61.
-
-
-LaTeX Warning: Reference `Experimental_Validation' on page 2 undefined on input
- line 65.
-
-
-LaTeX Warning: Reference `Conclusions' on page 2 undefined on input line 67.
-
-) (./LiteratureReview.tex
-
-LaTeX Warning: Citation `Joel:BOOK_MOEAs' on page 2 undefined on input line 13.
-
-
-
-LaTeX Warning: Citation `pilat2010evolutionary' on page 2 undefined on input li
-ne 15.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 19.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 2 undefined on input line 36.
-
-
-LaTeX Warning: Citation `horoba2008benefits' on page 2 undefined on input line 
-42.
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 47.
-
-
+]) (./LiteratureReview.tex
 Underfull \hbox (badness 10000) in paragraph at lines 47--55
  \OT1/ptm/m/it/10 2) De-com-po-si-tion Based MOEAs - MOEA/D: [][]
  []
 
 
 Underfull \hbox (badness 2418) in paragraph at lines 47--55
-\OT1/ptm/m/n/10 Decomposition-based MOEAs [\OT1/ptm/b/n/10 ?\OT1/ptm/m/n/10 ] t
-rans-form a MOP in
+\OT1/ptm/m/n/10 Decomposition-based MOEAs [4] trans-form a MOP in
  []
 
 
@@ -560,21 +470,6 @@ Underfull \hbox (badness 1371) in paragraph at lines 47--55
 Underfull \hbox (badness 5637) in paragraph at lines 47--55
 \OT1/ptm/m/n/10 con-sid-ered si-mul-ta-ne-ously. This trans-for-ma-tion can be
  []
-
-
-LaTeX Warning: Citation `Joel:MOEAD' on page 2 undefined on input line 56.
-
-
-LaTeX Warning: Citation `price2006differential' on page 2 undefined on input li
-ne 62.
-
-
-LaTeX Warning: Citation `hamdan2012distribution' on page 2 undefined on input l
-ine 62.
-
-
-LaTeX Warning: Citation `zhang2009performance' on page 2 undefined on input lin
-e 62.
 
 <img/SBX_eta_20_2D.png, id=16, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D.png Graphic file (type png)
@@ -593,17 +488,10 @@ Overfull \hbox (21.50006pt too wide) in paragraph at lines 70--74
  []
 
 
-LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 2 undefined on input 
-line 83.
-
-
 Underfull \hbox (badness 1983) in paragraph at lines 77--87
  \OT1/ptm/m/it/10 3) In-di-ca-tor Based MOEAs - SMS-EMOA: [][] \OT1/ptm/m/n/10 
 In multi-
  []
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 2 undefined on input line 88.
 
 <img/DensitySBX_English.png, id=18, 1290.8225pt x 920.43875pt>
 File: img/DensitySBX_English.png Graphic file (type png)
@@ -611,39 +499,8 @@ File: img/DensitySBX_English.png Graphic file (type png)
 <use img/DensitySBX_English.png>
 Package pdftex.def Info: img/DensitySBX_English.png used on input line 103.
 (pdftex.def)             Requested size: 180.67499pt x 128.83246pt.
- [2 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png>]
-
-LaTeX Warning: Citation `eshelman1993real' on page 3 undefined on input line 12
-3.
-
-
-LaTeX Warning: Citation `Joel:SBX1994' on page 3 undefined on input line 123.
-
-
-LaTeX Warning: Citation `Joel:UNDX' on page 3 undefined on input line 129.
-
-
-LaTeX Warning: Citation `Joel:DE_Storn_SPX' on page 3 undefined on input line 1
-29.
-
-
-LaTeX Warning: Citation `jain2011parent' on page 3 undefined on input line 131.
-
-
-
-LaTeX Warning: Citation `deb1994simulated' on page 3 undefined on input line 14
-5.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 3 undefined on input line 145.
-
-
-LaTeX Warning: Citation `Joel:SMSEMOA' on page 3 undefined on input line 145.
-
-
-LaTeX Warning: Reference `fig:fig_sim' on page 3 undefined on input line 154.
-
-<img/SBX_eta_20_2D_pv_1.png, id=28, 481.8pt x 361.35pt>
+ [2 <./img/SBX_eta_20_2D.png> <./img/SBX_eta_20_3D.png>] <img/SBX_eta_20_2D_pv_
+1.png, id=28, 481.8pt x 361.35pt>
 File: img/SBX_eta_20_2D_pv_1.png Graphic file (type png)
 
 <use img/SBX_eta_20_2D_pv_1.png>
@@ -661,97 +518,17 @@ Overfull \hbox (21.50006pt too wide) in paragraph at lines 178--182
  [][] 
  []
 
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
-82.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 3 undefined on input line 1
-82.
-
 [3 <./img/DensitySBX_English.png> <./img/SBX_eta_20_2D_pv_1.png> <./img/SBX_eta
-_20_2D_pv_01.png>]
-
-LaTeX Warning: Citation `deb1999self' on page 4 undefined on input line 211.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 211.
-
-
-
-LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 226.
-
-
-LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 232.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 244.
-
-
-
-LaTeX Warning: Reference `eq:child_1' on page 4 undefined on input line 244.
-
-
-LaTeX Warning: Reference `eq:sbx_spread' on page 4 undefined on input line 245.
-
-
-
-LaTeX Warning: Reference `eq:child_2' on page 4 undefined on input line 245.
-
-
-LaTeX Warning: Citation `Joel:SBX1994' on page 4 undefined on input line 260.
-
-
-LaTeX Warning: Citation `Joel:UNDX' on page 4 undefined on input line 260.
-
-
-LaTeX Warning: Citation `price2006differential' on page 4 undefined on input li
-ne 275.
-
-
-LaTeX Warning: Reference `fig:Simulation_pv' on page 4 undefined on input line 
-275.
-
-
-LaTeX Warning: Citation `ma2016multiobjective' on page 4 undefined on input lin
-e 279.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 4 undefined on input l
-ine 282.
-
-
-LaTeX Warning: Citation `muhlenbein1993predictive' on page 4 undefined on input
- line 282.
-
-
-LaTeX Warning: Reference `fig:Simulations_Index_20' on page 4 undefined on inpu
-t line 288.
-
-
-LaTeX Warning: Citation `voigt1995fuzzy' on page 4 undefined on input line 291.
-
-
-
-LaTeX Warning: Reference `fig:Simulation_Case_3' on page 4 undefined on input l
-ine 291.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 4 undefined on input line 2
-95.
-
-
-LaTeX Warning: Citation `Joel:NSGAII' on page 4 undefined on input line 295.
-
-<img/SBX_eta_2.png, id=38, 481.8pt x 361.35pt>
+_20_2D_pv_01.png>] <img/SBX_eta_2.png, id=38, 481.8pt x 361.35pt>
 File: img/SBX_eta_2.png Graphic file (type png)
- <use img/SBX_eta_2.png>
+
+<use img/SBX_eta_2.png>
 Package pdftex.def Info: img/SBX_eta_2.png used on input line 309.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
-
-<img/SBX_eta_20.png, id=39, 481.8pt x 361.35pt>
+ <img/SBX_eta_20.png, id=39, 481.8pt x 361.35pt>
 File: img/SBX_eta_20.png Graphic file (type png)
- <use img/SBX_eta_20.png>
+
+<use img/SBX_eta_20.png>
 Package pdftex.def Info: img/SBX_eta_20.png used on input line 310.
 (pdftex.def)             Requested size: 123.84283pt x 92.8791pt.
 
@@ -759,145 +536,19 @@ Overfull \hbox (11.18573pt too wide) in paragraph at lines 308--312
  [][] 
  []
 
-) (./Proposal.tex
-
-LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 6.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 4 undefined on input line 8.
-
-[4 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>]
-
-LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 16.
-
-
-LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
-t line 18.
-
-
-LaTeX Warning: Citation `hamdan2012distribution' on page 5 undefined on input l
-ine 20.
-
-
-LaTeX Warning: Reference `Experimental_Validation' on page 5 undefined on input
- line 31.
-
-
-LaTeX Warning: Citation `Joel:jMetal' on page 5 undefined on input line 33.
-
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 5 undefined on input line 3
-9.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 42.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 5 undefined on input line 43.
-
-
-LaTeX Warning: Reference `eqn:index_eta' on page 5 undefined on input line 44.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 48.
-
-
-LaTeX Warning: Citation `zitzler1999multiobjective' on page 5 undefined on inpu
-t line 48.
-
-
-LaTeX Warning: Citation `Joel:IGDPlus_And_GDPlus' on page 5 undefined on input 
-line 48.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 5 undefined on input l
-ine 50.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 5 undefined on input line 60.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 5 undefined on input line 60.
-
-[5]
-
-LaTeX Warning: Reference `alg:SBX_Operator' on page 6 undefined on input line 7
-1.
-
-
-LaTeX Warning: Reference `eqn:linear' on page 6 undefined on input line 73.
-
-
-LaTeX Warning: Reference `eqn:index_eta' on page 6 undefined on input line 73.
-
-) (./ExperimentalValidation.tex
-
-LaTeX Warning: Citation `Joel:WFG' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 3.
-
-
-LaTeX Warning: Citation `zhang2009performance' on page 6 undefined on input lin
-e 3.
-
-
-LaTeX Warning: Citation `tuvsar2007differential' on page 6 undefined on input l
-ine 5.
-
-
-LaTeX Warning: Citation `Joel:DTLZ_2' on page 6 undefined on input line 11.
-
-
-LaTeX Warning: Reference `tab:ReferencePoints' on page 6 undefined on input lin
-e 26.
-
-
-LaTeX Warning: Citation `Joel:Kuhn_Munkres' on page 6 undefined on input line 2
-6.
-
-
-LaTeX Warning: Citation `Joel:OperatorAHX' on page 6 undefined on input line 26
-.
-
-
-LaTeX Warning: Citation `Joel:StatisticalTest' on page 6 undefined on input lin
-e 29.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
-ine 42.
-
-
-LaTeX Warning: Reference `tab:statistical_Tests' on page 6 undefined on input l
-ine 48.
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 61.
-
-
-LaTeX Warning: Reference `tab:Metrics_3' on page 6 undefined on input line 61.
-
-
+) (./Proposal.tex [4 <./img/SBX_eta_2.png> <./img/SBX_eta_20.png>] [5])
+(./ExperimentalValidation.tex
 Underfull \hbox (badness 10000) in paragraph at lines 61--61
 [][][]\OT1/ptm/m/n/8 The de-tailed re-sults can be con-sulted in the web page
  []
-
-
-LaTeX Warning: Reference `tab:Metrics_2' on page 6 undefined on input line 67.
 
 [6])
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [7]
-No file main.bbl.
+(./main.bbl (/usr/share/texlive/texmf-dist/tex/latex/ucs/data/uni-32.def
+File: uni-32.def 2013/05/13 UCS: Unicode data U+2000..U+20FF
+))
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -909,41 +560,33 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[8
-
-] (./main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
- ) 
+[8] (./main.aux) ) 
 Here is how much of TeX's memory you used:
- 4417 strings out of 493304
- 66931 string characters out of 6139871
- 170870 words of memory out of 5000000
- 7766 multiletter control sequences out of 15000+600000
- 46621 words of font info for 91 fonts, out of 8000000 for 9000
+ 4683 strings out of 493304
+ 69996 string characters out of 6139871
+ 170177 words of memory out of 5000000
+ 8024 multiletter control sequences out of 15000+600000
+ 47757 words of font info for 92 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
  37i,15n,26p,682b,617s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-dist/fonts/
-type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
-ublic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/a
-msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
-/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texli
-ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw
-/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on main.pdf (8 pages, 328020 bytes).
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/font
+s/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/
+amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
+/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/sh
+are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/tex
+live/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
+rw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8
+a.pfb>
+Output written on main.pdf (8 pages, 336140 bytes).
 PDF statistics:
  113 PDF objects out of 1000 (max. 8388607)
  72 compressed objects within 1 object stream
